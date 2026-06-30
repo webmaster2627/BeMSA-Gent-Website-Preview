@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title data-translate="htmltitleprojectverantwoordelijken">BeMSA Ghent | Project Coordinators</title>
+    <link rel="stylesheet" href="./pvs.css">
+    <link rel="stylesheet" href="../BaseStyles/header.css">
+    <link rel="stylesheet" href="../BaseStyles/footer.css">
+    <link rel="shortcut icon" href="../../Download CI/BeMSA Icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="burgerContainer">
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <a href="../index.html" data-translate="bemsagent">BeMSA Ghent</a>
+    </div>
+    <div id="backdrop" class="backdrop" onclick="closeMenu()"></div>
+    <div id="mobileMenu" class="overlay">
+    <div class="close-btn" onclick="closeMenu()">✕</div>
+    <ul class="menu">
+        <li><a href="../index.html" onclick="closeMenu()"><img src="../../Download CI/Logo/BeMSALogoNB.png" alt=""></a></li>
+
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span data-translate="aboutus" class="mobilemenutitle">About Us</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="bemsagent" href="../AboutUs/bemsagent.html" onclick="closeMenu()">BeMSA Ghent</a></li> 
+            <li><a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard" onclick="closeMenu()">Current Board</a></li>
+            <li><a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards" onclick="closeMenu()">Past Boards</a></li>
+            <li><a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke" onclick="closeMenu()">Project Coordinators</a></li>
+            <li><a href="../AboutUs/missionandvision.html" data-translate="missandvis" onclick="closeMenu()">Mission & Vision</a></li>
+            <li><a data-translate="timeline" href="../AboutUs/timeline.html" onclick="closeMenu()">Timeline</a></li>
+            <li><a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">BeMSA | National</a></li>
+            <li><a href="../AboutUs/partners.html" data-translate="ourpartners" onclick="closeMenu()">Our Partners</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a href="#" onclick="toggleSubmenu(event)" >
+            <span class="mobilemenutitle" data-translate="calendar">Calendar</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="upcomingevents" href="../Calendar/upcomingevents.html" onclick="closeMenu()">Upcoming Events</a></li>
+            <li><a data-translate="bemsacalendar" href="../Calendar/calendar.html" onclick="closeMenu()">BeMSA Calendar</a></li>
+        </ul>
+        </li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            Standing Committees <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../StandingCommittees/score.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="">SCORE <br> <span class="subTitle">Standing Committee on Research Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scope.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="">SCOPE <br> <span class="subTitle">Standing Committee on Professional Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scora.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="">SCORA <br> <span class="subTitle">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span></a></li>
+            <li><a href="../StandingCommittees/scogs.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="">SCOGS <br> <span class="subTitle">Standing Committee on Global Surgery</span></a></li>
+            <li><a href="../StandingCommittees/scorp.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="">SCORP <br> <span class="subTitle">Standing Committee on Human Rights & Peace</span></a></li>
+            <li><a href="../StandingCommittees/scoph.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="">SCOPH <br> <span class="subTitle">Standing Committee on Public Health</span></a></li>
+            <li><a href="../StandingCommittees/scome.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="">SCOME <br> <span class="subTitle">Standing Committee on Medical Education</span></a></li>
+        </ul>
+        </li>
+        <li><a href="../TAT-platform/tathome.html" onclick="closeMenu()">TAT-platform</a></li>
+        <li><a data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html" onclick="closeMenu()">Photo Album</a></li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span id="mobilemenutitle" data-translate="contact">Contact</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../Contact/contactform.html" onclick="closeMenu()">E-mail</a></li>
+            <li><a href="../Socials/socials.html" onclick="closeMenu()" data-translate="socials">Socials</a></li>
+            <li><a data-translate="location" href="./Location/location.html" onclick="closeMenu()">Location</a></li>
+        </ul>
+        </li>
+        <li>
+            <a onclick="toggleSubmenu(event)"><span class="mobilemenutitle" data-translate="language">Language</span>
+                <img class="languageFlag current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English"><span class="arrow">▶</span>
+            </a>
+            <ul class="submenumobile">
+                <li>
+                    <a onclick="setLanguageAlt('en')">
+                        English
+                        <img class="languageFlag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('fr')">
+                        Français
+                        <img class="languageFlag" src="../../Download CI/Languageflags/french.png" alt="Français">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('nl')">
+                        Nederlands
+                        <img class="languageFlag" src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <header>
+        <div class="topBar">
+            <a href="../AboutUs/sponsorus.html" data-translate="howtosponsorus">How to sponsor us?</a>
+            <a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a>
+            <a href="../GOG/gog.html" data-translate="transgressivebehaviour">Transgressive behaviour</a>
+        </div>
+        <div class="bottomBar">
+            <div class="leftMenu">
+                <a href="../index.html" class="headerLogoLink">
+                    <img src="../../Download CI/Logo/logo/logo_local_committees/rgb/gent/gent_rgb.png" alt="BeMSA Gent Logo">
+                </a>
+            </div>
+            <div class="rightMenu">
+                <div class="dropdown dropdown-parent">
+                    <a data-translate="aboutus" class="rightmenubutton">About Us</a>
+                    <div class="submenu">
+                        <a data-translate="bemsagent" href="../AboutUs/bemsagent.html">BeMSA Ghent</a>
+                        <div class="dropdown side-dropdown">
+                            <a data-translate="ourteam" href="../AboutUs/ourteam.html">Our Team</a>
+                            <div class="side-submenu">
+                                <a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard">Current Board</a>
+                                <a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards">Past Boards</a>
+                                <a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke">Project Coordinators</a>
+                            </div>
+                        </div>
+                        <a data-translate="missandvis" href="../AboutUs/missionandvision.html">Mission & Vision</a>
+                        <a data-translate="timeline" href="../AboutUs/timeline.html">Timeline</a>
+                        <a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer">BeMSA | National</a>
+                        <a data-translate="ourpartners" href="../AboutUs/partners.html">Our Partners</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="calendar">Calendar</a>
+                    <div class="submenu">
+                        <a href="../Calendar/upcomingevents.html" data-translate="upcomingevents">Upcoming Events</a>
+                        <a href="../Calendar/calendar.html" data-translate="bemsacalendar">BeMSA calendar</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton">Standing Committees</a>
+                    <div class="scmenu">
+                        <a href="../StandingCommittees/score.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="SCORE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORE</span>
+                                <span class="sc-long">Standing Committee on Research Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scope.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="SCOPE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPE</span>
+                                <span class="sc-long">Standing Committee on Professional Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scora.html" >
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="SCORA-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORA</span>
+                                <span class="sc-long">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scogs.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="SCOGS-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOGS</span>
+                                <span class="sc-long">Standing Committee on Global Surgery</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scoph.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="SCOPH-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPH</span>
+                                <span class="sc-long">Standing Committee on Public Health</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scorp.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="SCORP-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORP</span>
+                                <span class="sc-long">Standing Committee on Human Rights and Peace</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scome.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="SCOME-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOME</span>
+                                <span class="sc-long">Standing Committee on Medical Education</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="rightmenubutton" href="../TAT-platform/tathome.html">TAT-platform</a>
+                <a class="rightmenubutton" data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html">Photo Album</a>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="contact">Contact</a>
+                    <div class="submenu">
+                        <a href="../Contact/contactform.html">E-mail</a>
+                        <a href="../Socials/socials.html" data-translate="socials">Socials</a>
+                        <a data-translate="location" href="../Location/location.html">Location</a>
+                    </div>
+                </div>
+                <div class="dropdown lang-dropdown dropdown-parent">
+                    <a class="rightmenubutton" href="#">
+                        <img class="lang-icon current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+
+                    <div class="submenu lang-menu">
+                        <a onclick="setLanguageAlt('en')">
+                            <img src="../../Download CI/Languageflags/English.webp" alt="English">
+                        </a>
+                        <a onclick="setLanguageAlt('fr')">
+                            <img src="../../Download CI/Languageflags/french.png" alt="Français">
+                        </a>
+                        <a onclick="setLanguageAlt('nl')">
+                            <img src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <section class="committeesPage">
+                <h1 data-translate="projectverantwoordelijke">Project Coordinators</h1>
+                <p data-translate="pv1">
+                    A Project Coordinator ensures that BeMSA Ghent projects are well organized and run smoothly. They oversee the planning and management of projects, assign tasks to team members, coordinate communication, and keep track of progress. They also contact sponsors and external partners to support project activities and make sure everything stays on schedule and in good hands.
+                </p>
+                <p>
+                    Skip to standing committees' project coordinators:
+                </p>
+                <div class="skipTo">
+                    <div class="skipItem">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="">
+                        <a href="#SCOME">SCOME</a>
+                    </div>
+
+                    <div class="skipItem">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="">
+                        <a href="#SCORA">SCORA</a>
+                    </div>
+
+                    <div class="skipItem">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="">
+                        <a href="#SCORP">SCORP</a>
+                    </div>
+
+                    <div class="skipItem">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="">
+                        <a href="#SCOGS">SCOGS</a>
+                    </div>
+
+                    <div class="skipItem">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="">
+                        <a href="#SCOPH">SCOPH</a>
+                    </div>
+
+                </div>
+                <div class="committeeSection">
+                    <div class="subTitle">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt=""><h2 id="SCOME">SCOME</h2>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>DATE YOUR DOCTOR</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>2025-2026</td>
+                                    <td>Naam onbekend</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                                fill="none" 
+                                                viewBox="0 0 24 24" 
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" 
+                                                    stroke-linejoin="round" 
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2024-2025</td>
+                                    <td>Naam onbekend</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                                fill="none" 
+                                                viewBox="0 0 24 24" 
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" 
+                                                    stroke-linejoin="round" 
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td>Naam onbekend</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                                fill="none" 
+                                                viewBox="0 0 24 24" 
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" 
+                                                    stroke-linejoin="round" 
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>2022-2023</td>
+                                <td>
+                                    Nikita Priels<br>
+                                    Mien Van de Walle<br>
+                                    Mathilde Majchrzak
+                                </td>
+                                <td>
+                                    <a href="#" aria-label="View album">                
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                            <circle cx="12" cy="12.5" r="3.5"/>
+                                        </svg>
+                                    </a>
+                                </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Zoë Verloo<br>
+                                        Maxim Khalenkow
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Robbe Vermoesen<br>
+                                        Nico Pinson<br>
+                                        Zoë Verloo
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Robbe Vermoesen<br>
+                                        Nico Pinson
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>Robbe Vermoesen</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>
+                                        Femke Wauters<br>
+                                        Lindsey van Raemdonck
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>Femke Wauters</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>MEDISTITCH OEFENSESSIES</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <tr>
+                                    <td>2025-2026</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                    <td>2024-2025</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Ines Van Styvendael<br>
+                                        Bianca Van Neck
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>Eline Bonte</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>Ine Desimpele</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Nathan Laurent<br>
+                                        Charles Grammens
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>Simon Segers</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>
+                                        Hayat El Kaddouri<br>
+                                        Simon Segers
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>Marie-Laurence De Prest</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>DURF ONDERNEMEN</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>Angelina Pulyavina</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Wietse Claeys<br>
+                                        Bram Logghe
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>
+                                        Bram Logghe<br>
+                                        Wietse Claeys
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>Bram Logghe</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>Bram Logghe</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="committeeSection">
+                    <div class="subTitle">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt=""><h2 id="SCORA">SCORA</h2>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>SEKSUELE OPVOEDING OP SCHOOL/SOS</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>2025-2026</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2024-2025</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Ines Van Styvendael<br>
+                                        Charlotte De Schrijver
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Emma Claeys<br>
+                                        Wannes Van Buggenhout<br>
+                                        Stijn Rommers<br>
+                                        Fien Westijn
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Eveline Neuttiens<br>
+                                        Fien Roosens
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Katharina Van Parys<br>
+                                        Joachim De Schuijmer
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>Fien Roosens</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>Manoe van Herwaarden</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>Freya Brusselle</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>STIGMA CHALLENGE</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Morgane Mertens<br>
+                                        Alessio Capobianco
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Amber Degoe<br>
+                                        Jens Van Cauwenberghe
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>
+                                        Eline Debuyserie<br>
+                                        Ineke De Greyt
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>Margaux Declerck</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>Elise Veys</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="committeeSection">
+                    <div class="subTitle">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt=""><h2 id="SCORP">SCORP</h2>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>HUMAN RIGHTS WEEK</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Sarah Ballet<br>
+                                        Tristan Descamps<br>
+                                        Marthe Schollaert
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>Michael McMahon</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Michael McMahon<br>
+                                        Minte Habtie
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>Minte Habtie</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>Hayat El Kaddouri</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>
+                                        Elisabeth De Gucht<br>
+                                        Rico Paridaens
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>---</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2015-2016</td>
+                                    <td>
+                                        Marieke Nuyttens<br>
+                                        Rico Paridaens
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>SPORTEN MET MENSEN MET BEPERKING</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Vincent Van Belle<br>
+                                        Catho Sadones<br>
+                                        Sanne Swaenen
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Claudia De Croock<br>
+                                        Ulrike Vanhoutte
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Febe Van de Voorde<br>
+                                        Zoë Verloo<br>
+                                        Kaat Van Overbeke
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Amber De Rop<br>
+                                        Jozefien Meersschaut<br>
+                                        Zoë Verloo
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>
+                                        Lisa Martens<br>
+                                        Hanane El Kadouri
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>
+                                        Hayat El Kaddouri<br>
+                                        Josephine De Vliegher
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>
+                                        Rico Paridaens & Tim Krols<br>
+                                        Laura Braeckeveldt
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>CURSUS VLAAMSE GEBARENTAAL</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>Amaryllis Eeckeloo</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>Alessia Petrella</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="committeeSection">
+                    <div class="subTitle">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt=""><h2 id="SCOGS">SCOGS</h2>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>INSPIRATION NIGHT GLOBAL SURGERY: InciSioN</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Jules Boussauw<br>
+                                        Hendrik Vandenbrande
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Jules Boussauw<br>
+                                        Hendrik Vandenbrande
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt=""><a>GLOBAL SURGERY 101</a>
+                    </div>
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Jules Boussauw<br>
+                                        Hendrik Vandenbrande
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Jules Boussauw<br>
+                                        Hendrik Vandenbrande
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Eline Bonte<br>
+                                        Prasamsha Panta<br>
+                                        Miryam
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">                
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="committeeSection">
+                    <div class="subTitle">
+                        <img src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt=""><h2 id="SCOPH">SCOPH</h2>
+                    </div>
+
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+                        <a>GEZONDE VOEDING / IEDEREEN GEZOND</a>
+                    </div>
+
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Alexandra Verhelst<br>
+                                        Alexander Maes
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Zerlina Cosijn<br>
+                                        Constance Van der Elst<br>
+                                        Riet Van Loo
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Jenna Klijn<br>
+                                        Julie Nollet
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Jozefien Meersschaut<br>
+                                        Kaat Van Overbeke
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>
+                                        Jana Dewulf<br>
+                                        Marie-Alix Feenstra
+                                    </td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>Maud Claeys</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>Fien Goossens</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2015-2016</td>
+                                    <td>Tessa Van Steenstraeten</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2014-2015</td>
+                                    <td>Marieke Nuyttens</td>
+                                    <td>
+                                        <a href="#" aria-label="View album">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+                        <a>HEART FOR LIFE</a>
+                    </div>
+
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="year">Year</th>
+                                    <th data-translate="name">Name</th>
+                                    <th data-translate="photoalbum">Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td><a href="#" aria-label="View album"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/><circle cx="12" cy="12.5" r="3.5"/></svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Sam Dhaene<br>
+                                        Anaïs Carlier
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Hendrik Van den Brande<br>
+                                        Camille Vervaet
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Margo Vandenheede
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Freek Van den Bossche<br>
+                                        Margo Vandenheede
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>Laura Braeckeveldt</td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>Laura Braeckeveldt</td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2016-2017</td>
+                                    <td>Julien Van Den Broucke</td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2015-2016</td>
+                                    <td>Marieke Nuyttens</td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+                        <a>KEEP UP THE RYTHM</a>
+                    </div>
+
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Name</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td><a href="#" aria-label="View album"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/><circle cx="12" cy="12.5" r="3.5"/></svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Sam Dhaene<br>
+                                        Anaïs Carlier
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Eugenie Van Der Beken<br>
+                                        Lone De Mulder
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+                        <a>LET'S SMILE AGAIN</a>
+                    </div>
+
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Name</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Maxim Ghyselen
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Jenna Klijn<br>
+                                        Sylvester Heerwegh
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+                        <a>TEDDY BEAR HOSPITAL</a>
+                    </div>
+
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Name</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Femke Vandewalle<br>
+                                        Marieke Linseele
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Marie Vijverman<br>
+                                        Isolde Van Wesemael
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Marie Vijverman<br>
+                                        Isolde Van Wesemael
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Amy Van Buggenhout<br>
+                                        Line Holvoet
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>Jessica Verstraeten</td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>
+                                        Céleste Van der Schueren<br>
+                                        Elisabeth De Maere
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+                        <a>START TO TALK</a>
+                    </div>
+
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Name</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Elke De Vogelaere<br>
+                                        Stef Beerens
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>---</td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2020-2021</td>
+                                    <td>
+                                        Bieke De Waele<br>
+                                        Eva Helpers
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2019-2020</td>
+                                    <td>
+                                        Bieke De Waele<br>
+                                        Eva Helpers
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2018-2019</td>
+                                    <td>
+                                        Lindsey van Raemdonck<br>
+                                        Rico Paridaens
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2017-2018</td>
+                                    <td>
+                                        Lindsey van Raemdonck<br>
+                                        Rico Paridaens
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="subTitle">
+                        <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+                        <a>MEER DAN KANKER</a>
+                    </div>
+
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Name</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>2023-2024</td>
+                                    <td></td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2022-2023</td>
+                                    <td>
+                                        Thomas Derijcke<br>
+                                        Jenna Klijn<br>
+                                        Femke van Vaerenbergh
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2021-2022</td>
+                                    <td>
+                                        Thomas Derijcke<br>
+                                        Jenna Klijn<br>
+                                        Pieter Boels
+                                    </td>
+                                    <td><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 7.5A1.5 1.5 0 014.5 6h3l1.2-1.5h6.6L16.5 6h3A1.5 1.5 0 0121 7.5v10.5A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5V7.5z"/>
+                                                <circle cx="12" cy="12.5" r="3.5"/>
+                                            </svg></a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-column">
+            <h3 data-translate="bemsanpo">BeMSA npo</h3>
+            <ul>
+                <li><a data-translate="aboutus" href="../AboutUs/bemsagent.html">About Us</a></li>
+                <li><a data-translate="bemsagentonthenews" href="../News/news.html">BeMSA Gent on the News</a></li>
+                <li><a data-translate="bemsanational" href="https://www.bemsa.be/" target="_blank" rel="noopener noreferrer">BeMSA | National</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="legal">Legal</h3>
+            <ul>
+                <li><a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a></li>
+                <li><a data-translate="transgressivebehaviour" href="../GOG/gog.html">Transgressive behaviour</a></li>
+                <li><a href="https://docs.google.com/document/d/1BUPTQK4D-L76CK5wu9N83QkAfNaDvYoW/edit#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer" data-translate="bylaws">By-laws</a></li>
+                <li>BE 0536.703.374</li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="contact">Contact</h3>
+            <ul>
+                <li><a href="mailto:info@bemsa-gent.be" target="_blank" rel="noopener noreferrer">info@bemsa-gent.be</a></li>
+                <li><a href="../Location/location.html">C Heymanslaan 10 bus -1B3 | Ghent 9000</a></li>
+                <li><a data-translate="contactform" href="../Contact/contactform.html">Contact form</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column footer-brand">
+                <a class="imageFooter" href="../index.html"><img src="../../Download CI/Logo/OIP.webp" alt=""></a>
+                <div class="footer-socials">
+                    <a href="https://www.bing.com/ck/a?!&&p=ae8a3bd15ff8306ad873a9a50e37d58b583d0399645bdac7ca6a4766f207c17aJmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=facebook+bemsa+gent&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0JlTVNBR2VudC8" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=04266983d4e99b1e79bc6fd928b0d999dd557d4c1bd708ec5386b0ab4da462f4JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=instagram+bemsa+gent&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9iZW1zYV9nZW50Lw" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@bemsa_gent" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=541c6d8ca824ffff9367b2669c3d1ec6f7df03de2a451ae509147a46ced6ad15JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=youtube+bemsa+gent&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQGJlbXNhZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=ea6c151f7bfae94d21f0a67ed4034ff3115b434b0ad48c4480d4074a4ffa0934JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=BeMSA+Gent+Linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvYmVtc2EtZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" ></i></a>
+                </div>
+            <div class="footer-accent-bar"></div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><span id="year"></span> <span data-translate="bemsanpofooter">BeMSA npo</span></p>
+            <div class="footer-bottom-links">
+                <a href="../AboutUs/sponsorus.html" data-translate="sponsorbemsanpo">Sponsor BeMSA npo</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../TranslationFiles/language.js"></script>
+    <script src="../BaseStyles/header.js"></script>
+    <script>
+        history.scrollRestoration = "manual";
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 50);
+        });
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

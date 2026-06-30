@@ -1,0 +1,55 @@
+@mixin displayFlex($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Raleway', sans-serif;
+
+
+
+$darkblue: #1E3142;
+$turquoise: #3FA3A8;
+$lightblue: #A1CCC5;
+$goldYellow: #F4D24A;
+
+
+$scoreColor: #3244a1;
+$scopeColor: #387fc7;
+$scoraColor: #bf222d;
+$scorpColor: #549232;
+$scogsColor: #8e0a83;
+$scophColor: #ef6830;
+$scomeColor: #000000;
+
+
+$tablet: 1024px;
+$mobile: 768px;
+$small-mobile: 480px;
+
+html{
+    main{
+        h1{
+            color: $scophColor;
+        }
+        .buttonBlock{
+            a{
+                button{
+                    background: $scophColor;
+                }
+            }
+        }
+        .eventInfo{
+            h3{
+                color: $scophColor;
+            }
+        }
+    }
+}

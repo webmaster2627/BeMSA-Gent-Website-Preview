@@ -1,0 +1,506 @@
+@mixin displayFlex($dir, $just, $align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+$primaryFont : 'Montserrat', sans-serif;
+$secondayFont :'Raleway', sans-serif;
+
+$goldYellow : #F4D24A;
+$lightblue : #A1CCC5;
+$turquoise : #3FA3A8;
+$darkblue : #1E3142;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 180px;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    overflow-x: hidden;
+}
+
+.committeesPage{
+    width: min(1100px, 92%);
+    margin: 3rem auto 5rem auto;
+
+    @include displayFlex(column, flex-start, stretch);
+    gap: 2.5rem;
+
+    animation: fadeUp 0.8s ease forwards;
+
+    h1{
+        font-size: 3rem;
+        color: $darkblue;
+        font-family: $primaryFont;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+    p {
+                font-family: $secondayFont;
+                font-size: 1rem;
+                line-height: 1.3;
+                color: rgba(30, 49, 66, 0.8);
+
+                max-width: 850px;
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: color 0.25s ease;
+                    font-size: 1rem;
+                }
+
+                a::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.2rem;
+
+                    width: 0;
+                    height: 2px;
+
+                    background-color: $goldYellow;
+
+                    transition: width 0.25s ease;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: $turquoise;
+                }
+
+                a:hover::after {
+                    width: 100%;
+                }
+            }
+    .skipTo {
+    @include displayFlex(row, flex-start, center);
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+/* each logo + link behaves as one unit */
+.skipItem {
+    @include displayFlex(row, flex-start, center);
+    gap: 0.4rem;
+}
+
+.skipItem img {
+    height: 1.5rem;
+    width: auto;
+}
+
+/* link styling */
+.skipItem a {
+    font-size: 1.5rem;
+    color: $darkblue;
+    font-family: $primaryFont;
+    font-weight: 800;
+    line-height: 1.2;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.skipItem a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 0;
+    height: 3px;
+    background-color: $goldYellow;
+    transition: width 0.25s ease;
+}
+
+.skipItem a:hover {
+    cursor: pointer;
+}
+
+.skipItem a:hover::after {
+    width: 100%;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .skipItem img {
+        height: 1.3rem;
+    }
+
+    .skipItem a {
+        font-size: 1.25rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .skipTo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .skipItem img {
+        height: 1.2rem;
+    }
+
+    .skipItem a {
+        font-size: 1.1rem;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 400px) {
+    .skipItem img {
+        height: 1rem;
+    }
+
+    .skipItem a {
+        font-size: 1rem;
+    }
+}
+
+    .committeeSection{
+        @include displayFlex(column, flex-start, stretch);
+        gap: 1rem;
+
+        .subTitle{
+            @include displayFlex(row, flex-start, center);
+            img{
+                height: 2.5rem;
+                width: auto;
+
+            }
+            h2{
+                font-size: 2rem;
+                color: $darkblue;
+                font-family: $primaryFont;
+                font-weight: 800;
+                line-height: 1.2;
+            }
+            a{
+                font-size: 1.5rem;
+                color: $turquoise;
+                font-family: $primaryFont;
+                font-weight: 800;
+                line-height: 1.2;
+                padding-left: 0.3rem;
+                position: relative;
+                text-decoration: none;
+                transition: color 0.25s ease;
+
+            }
+            a::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.2rem;
+
+                    width: 0;
+                    height: 3px;
+
+                    background-color: $goldYellow;
+
+                    transition: width 0.25s ease;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: $turquoise;
+                }
+
+                a:hover::after {
+                    width: 100%;
+                }
+        }
+
+        .tableWrapper{
+            width: 100%;
+            border-radius: 22px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 10px 30px rgba(30, 49, 66, 0.08);
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+
+            thead{
+                background: $darkblue;
+
+                th{
+                    padding: 1rem 1.2rem;
+                    text-align: left;
+                    color: white;
+                    font-family: $primaryFont;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+
+            tbody{
+
+                tr{
+                    transition: background 0.25s ease;
+
+                    &:nth-child(even){
+                        background: rgba(161, 204, 197, 0.12);
+                    }
+
+                    &:hover{
+                        background: rgba(244, 210, 74, 0.12);
+                    }
+
+                    td{
+                        padding: 1rem 1.2rem;
+                        font-family: $secondayFont;
+                        font-size: 1rem;
+                        line-height: 1.4;
+                        color: rgba(30, 49, 66, 0.85);
+                        border-bottom: 1px solid rgba(30, 49, 66, 0.08);
+
+                        a{
+                            @include displayFlex(row, center, center);
+
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 12px;
+
+                            background: rgba(63, 163, 168, 0.12);
+
+                            color: $turquoise;
+                            text-decoration: none;
+
+                            transition: all 0.25s ease;
+
+                            svg{
+                                width: 22px;
+                                height: 22px;
+                                stroke-width: 2;
+                            }
+
+                            &:hover{
+                                background: $darkblue;
+                                color: white;
+                                transform: translateY(-2px);
+                            }
+                        }
+                    }
+                }
+            }
+            @media (min-width: 601px){
+                table-layout: fixed;
+
+                th:nth-child(1),
+                td:nth-child(1){
+                    width: 120px;
+                }
+
+                th:nth-child(3),
+                td:nth-child(3){
+                    width: 100px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* DESKTOP */
+    @media (min-width: 1440px){
+        width: min(1200px, 85%);
+        html{
+            scroll-padding-top: 180px;
+        }
+    }
+
+    /* LAPTOP */
+    @media (max-width: 1024px){
+        html{
+            scroll-padding-top: 60px;
+        }
+        width: min(900px, 92%);
+
+        h1{
+            font-size: 2.7rem;
+        }
+
+        .committeeSection{
+
+            .subTitle{
+                h2{font-size: 1.8rem;}
+                a{
+                font-size: 1.4rem;
+            }
+            }
+        }
+    }
+    @media (max-width: 900px){
+        html{
+            scroll-padding-top: 60px;
+        }
+    }
+    /* TABLET */
+    @media (max-width: 768px){
+        html{
+            scroll-padding-top: 60px;
+        }
+        width: 94%;
+        gap: 2rem;
+
+        h1{
+            font-size: 2.3rem;
+        }
+
+        .committeeSection{
+
+            .subTitle {
+                h2{
+                font-size: 1.5rem;}
+                a{
+                font-size: 1.2rem;
+                }
+            }
+
+            table{
+
+                th,
+                td{
+                    padding: 0.9rem;
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px){
+        
+    margin: 2rem auto 4rem auto;
+    h1{
+        font-size: 2rem;
+    }
+
+    .committeeSection{
+
+        .subTitle {
+                h2{
+                font-size: 1.2rem;}
+                a{
+                font-size: 1.2rem;
+                }
+            }
+
+        .tableWrapper{
+            background: transparent;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 1rem;
+
+            thead{
+                display: none;
+            }
+
+            tbody{
+                @include displayFlex(column, flex-start, stretch);
+                gap: 1rem;
+
+                tr{
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+
+                    background: white !important;
+                    border-radius: 20px;
+
+                    box-shadow: 0 12px 30px rgba(30, 49, 66, 0.12);
+
+                    td{
+                        border: none;
+                        padding: 1rem 1.1rem;
+
+                        @include displayFlex(row, space-between, center);
+
+                        gap: 1rem;
+
+                        font-size: 0.95rem;
+                        color: rgba(30, 49, 66, 0.9);
+
+                        /* LABEL SIDE */
+                        &::before{
+                            font-weight: 700;
+                            color: $darkblue;
+                            font-family: $primaryFont;
+
+                            min-width: 78px;
+
+                            text-align: left;
+                            flex-shrink: 0;
+                        }
+
+                        &:nth-child(1)::before{
+                            content: "Year";
+                        }
+
+                        &:nth-child(2)::before{
+                            content: "Name";
+                        }
+
+                        &:nth-child(3)::before{
+                            content: "Album";
+                        }
+
+                        a{
+                            width: 40px;
+                            height: 40px;
+
+                            background: rgba(63, 163, 168, 0.12);
+                            color: $turquoise;
+
+                            &:hover{
+                                background: $darkblue;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

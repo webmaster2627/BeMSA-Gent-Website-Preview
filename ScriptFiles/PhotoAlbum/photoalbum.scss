@@ -1,0 +1,660 @@
+@mixin displayFlex($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Raleway', sans-serif;
+
+
+
+$darkblue: #1E3142;
+$turquoise: #3FA3A8;
+$lightblue: #A1CCC5;
+$goldYellow: #F4D24A;
+
+
+$scoreColor: #3244a1;
+$scopeColor: #387fc7;
+$scoraColor: #bf222d;
+$scorpColor: #549232;
+$scogsColor: #8e0a83;
+$scophColor: #ef6830;
+$scomeColor: #000000;
+
+
+$tablet: 1024px;
+$mobile: 768px;
+$small-mobile: 480px;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: white;
+    main{
+            width: min(1100px, 92%);
+            margin: 3rem auto 1rem auto;
+
+            @include displayFlex(column, flex-start, stretch);
+            gap: 2.5rem;
+
+            animation: fadeUp 0.8s ease forwards;
+        h1 {
+            font-family: $primaryFont;
+            color: $darkblue;
+            font-weight: 800;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-family: $primaryFont;
+            color: $turquoise;
+            font-weight: 700;
+            font-size: clamp(1.5rem, 3vw, 2.1rem);
+            line-height: 1.3;
+
+            @include displayFlex(row, flex-start, center);
+            gap: 0.5rem;
+
+            img {
+                height: clamp(20px, 2.5vw, 33px);
+                width: auto;
+                flex-shrink: 0;
+            }
+        }
+
+        p {
+            font-family: $secondaryFont;
+            font-size: clamp(1rem, 1.2vw, 1.125rem);
+            line-height: 1.7;
+            color: $darkblue;
+            margin-bottom: 1rem;
+        }
+
+        ul,
+        ol {
+            font-family: $secondaryFont;
+            font-size: clamp(1rem, 1.2vw, 1.125rem);
+            line-height: 1.7;
+            color: $darkblue;
+            padding-left: 1.25rem;
+            margin-bottom: 1.25rem;
+
+            li {
+                margin-bottom: 0.6rem;
+            }
+        }
+
+        .activeLink {
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+            font-family: inherit;
+
+            transition: color 0.25s ease;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -0.2rem;
+
+                width: 0;
+                height: 2px;
+
+                background: $goldYellow;
+                transition: width 0.25s ease;
+            }
+
+            &:hover {
+                color: $turquoise;
+                cursor: pointer;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+
+
+        .container {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .section {
+            @include displayFlex(column, flex-start, stretch);
+            gap: 2rem;
+        }
+
+
+        .subTitle{
+            @include displayFlex(row, flex-start, center);
+            img{
+                height: 2.5rem;
+                width: auto;
+
+            }
+            h2{
+                font-size: 2rem;
+                color: $darkblue;
+                font-family: $primaryFont;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+            a{
+                font-size: 1.5rem;
+                color: $turquoise;
+                font-family: $primaryFont;
+                font-weight: 800;
+                line-height: 1.2;
+                padding-left: 0.3rem;
+                position: relative;
+                text-decoration: none;
+                transition: color 0.25s ease;
+
+            }
+            a::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.2rem;
+
+                    width: 0;
+                    height: 3px;
+
+                    background-color: $goldYellow;
+
+                    transition: width 0.25s ease;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: $turquoise;
+                }
+
+                a:hover::after {
+                    width: 100%;
+                }
+        }
+
+
+
+        @media (max-width: $tablet) {
+            p, ul, ol, a {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: $mobile) {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: $small-mobile) {
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            p, ul, ol, a {
+                font-size: 0.95rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+      main{
+
+    .boardSection,
+    .pastBoards{
+        @include displayFlex(column, flex-start, stretch);
+        gap: 2.5rem;
+    }
+
+    .boardHero{
+        width: 100%;
+        border-radius: 28px;
+        overflow: hidden;
+
+        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    .boardCategory{
+        @include displayFlex(column, flex-start, stretch);
+        gap: 1.5rem;
+
+        h3{
+            font-family: $primaryFont;
+            color: $darkblue;
+            font-size: clamp(1.3rem, 2vw, 2rem);
+            font-weight: 800;
+        }
+    }
+
+    .memberGrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        justify-content: space-evenly;
+    }
+
+    .memberCard{
+        background: white;
+
+        border-radius: 24px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 10px 30px rgba(0,0,0,0.06);
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+
+        &:hover{
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 18px 40px rgba(0,0,0,0.1);
+        }
+
+        img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            display: block;
+        }
+
+        h4{
+            @include displayFlex(row, flex-start, center);
+            font-family: $primaryFont;
+            color: $turquoise;
+            font-size: 1.2rem;
+            font-weight: 800;
+
+            padding:
+                0.2rem
+                1rem
+                0.2rem
+                1rem;
+            img{
+                height: 2rem;
+                width: auto;
+            }
+        }
+
+        p{
+            padding:
+                0
+                1rem
+                0rem
+                1rem;
+
+            margin: 0;
+        }
+    }
+
+    .duoGrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .duoCard{
+        background: white;
+
+        border-radius: 24px;
+
+        overflow: hidden;
+
+        @include displayFlex(row, flex-start, center);
+
+        gap: 1rem;
+
+        padding: 1rem;
+
+        box-shadow:
+            0 10px 30px rgba(0,0,0,0.06);
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+
+        &:hover{
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 18px 40px rgba(0,0,0,0.1);
+        }
+
+        img{
+            width: 90px;
+            height: 90px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            flex-shrink: 0;
+        }
+
+        h4{
+            font-family: $primaryFont;
+            color: $turquoise;
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 0.2rem;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+
+    .boardDropdown{
+        background: white;
+
+        border-radius: 24px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 10px 30px rgba(0,0,0,0.06);
+
+        summary{
+            list-style: none;
+
+            padding: 1.5rem;
+
+            font-family: $primaryFont;
+            font-size: 1.4rem;
+            font-weight: 800;
+
+            color: $darkblue;
+
+            cursor: pointer;
+
+            transition:
+                background 0.25s ease,
+                color 0.25s ease;
+
+            &:hover{
+                background: rgba(63,163,168,0.08);
+                color: $turquoise;
+            }
+
+            &::-webkit-details-marker{
+                display: none;
+            }
+        }
+
+        .dropdownContent{
+            padding: 0 1.5rem 1.5rem 1.5rem;
+
+            @include displayFlex(column, flex-start, stretch);
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width: $mobile){
+        .fillerCard{
+            display: none;
+        }
+        .duoCard{
+            flex-direction: column;
+            text-align: center;
+
+            img{
+                width: 110px;
+                height: 110px;
+            }
+        }
+
+        .boardDropdown{
+
+            summary{
+                font-size: 1.15rem;
+            }
+        }
+    }
+
+    @media (max-width: $small-mobile){
+        .fillerCard{
+            display: none;
+        }
+        .memberGrid{
+            grid-template-columns: 1fr;
+        }
+
+        .duoGrid{
+            grid-template-columns: 1fr;
+        }
+    }
+    }
+    main{
+        .driveCard{
+    width: min(800px, 100%);
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 0.3rem 1.4rem;
+
+    text-decoration: none;
+
+    @include displayFlex(row, flex-start, center);
+
+    gap: 1.5rem;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.25s ease;
+
+    &:hover{
+        transform: translateY(-4px);
+
+        box-shadow:
+            0 18px 40px rgba(0,0,0,0.1);
+
+        background:
+            rgba(63,163,168,0.03);
+
+        .driveText h2{
+            color: $turquoise;
+        }
+
+        .driveText h2::after{
+            width: 100%;
+        }
+
+        .driveIcon{
+            background: rgba(63,163,168,0.14);
+
+            i{
+                color: $turquoise;
+            }
+        }
+    }
+}
+
+/* ICON */
+.driveIcon{
+    width: 65px;
+    height: 65px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(63,163,168,0.08);
+
+    flex-shrink: 0;
+
+    @include displayFlex(row, center, center);
+
+    transition:
+        background 0.25s ease;
+
+    i{
+        font-size: 2.3rem;
+
+        color: $darkblue;
+
+        transition: color 0.25s ease;
+    }
+}
+
+/* TEXT */
+.driveText{
+
+    h2{
+        position: relative;
+
+        width: fit-content;
+
+        font-family: $primaryFont;
+
+        font-size: clamp(1.1rem, 1.7vw, 1.7rem);
+
+        font-weight: 800;
+
+        color: $darkblue;
+
+        line-height: 1.2;
+
+        transition: color 0.25s ease;
+
+        &::after{
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: -0.25rem;
+
+            width: 0;
+
+            height: 3px;
+
+            background: $goldYellow;
+
+            transition: width 0.25s ease;
+        }
+    }
+
+    p{
+        margin-top: 0.8rem;
+
+        font-family: $secondaryFont;
+
+        color: rgba(30,49,66,0.75);
+
+        line-height: 1.7;
+    }
+}
+
+/* TABLET */
+@media (max-width: $tablet){
+
+    .driveCard{
+        padding: 1.4rem 1.6rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: $mobile){
+
+    .driveCard{
+        flex-direction: column;
+
+        text-align: center;
+
+        align-items: center;
+
+        padding: 1.5rem;
+    }
+
+    .driveText{
+
+        h2{
+            margin: 0 auto;
+        }
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: $small-mobile){
+
+    .driveCard{
+        border-radius: 22px;
+    }
+
+    .driveIcon{
+        width: 75px;
+        height: 75px;
+
+        i{
+            font-size: 2rem;
+        }
+    }
+
+    .driveText{
+
+        h2{
+            font-size: 1.2rem;
+        }
+
+        p{
+            font-size: 0.95rem;
+        }
+    }
+}
+    }
+}
+
+
+

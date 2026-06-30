@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="htmltitleprivacypolicy">BeMSA Gent | Privacy Policy</title>
+    <link rel="stylesheet" href="./privacyStyle.css">
+    <link rel="stylesheet" href="../BaseStyles/header.css">
+    <link rel="stylesheet" href="../BaseStyles/footer.css">
+    <link rel="shortcut icon" href="../../Download CI/BeMSA Icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="burgerContainer">
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <a href="../index.html" data-translate="bemsagent">BeMSA Ghent</a>
+    </div>
+    <div id="backdrop" class="backdrop" onclick="closeMenu()"></div>
+    <div id="mobileMenu" class="overlay">
+    <div class="close-btn" onclick="closeMenu()">✕</div>
+    <ul class="menu">
+        <li><a href="../index.html" onclick="closeMenu()"><img src="../../Download CI/Logo/BeMSALogoNB.png" alt=""></a></li>
+
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span data-translate="aboutus" class="mobilemenutitle">About Us</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="bemsagent" href="../AboutUs/bemsagent.html" onclick="closeMenu()">BeMSA Ghent</a></li> 
+            <li><a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard" onclick="closeMenu()">Current Board</a></li>
+            <li><a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards" onclick="closeMenu()">Past Boards</a></li>
+            <li><a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke" onclick="closeMenu()">Project Coordinators</a></li>
+            <li><a href="../AboutUs/missionandvision.html" data-translate="missandvis" onclick="closeMenu()">Mission & Vision</a></li>
+            <li><a data-translate="timeline" href="../AboutUs/timeline.html" onclick="closeMenu()">Timeline</a></li>
+            <li><a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">BeMSA | National</a></li>
+            <li><a href="../AboutUs/partners.html" data-translate="ourpartners" onclick="closeMenu()">Our Partners</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a href="#" onclick="toggleSubmenu(event)" >
+            <span class="mobilemenutitle" data-translate="calendar">Calendar</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="upcomingevents" href="../Calendar/upcomingevents.html" onclick="closeMenu()">Upcoming Events</a></li>
+            <li><a data-translate="bemsacalendar" href="../Calendar/calendar.html" onclick="closeMenu()">BeMSA Calendar</a></li>
+        </ul>
+        </li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            Standing Committees <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../StandingCommittees/score.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="">SCORE <br> <span class="subTitle">Standing Committee on Research Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scope.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="">SCOPE <br> <span class="subTitle">Standing Committee on Professional Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scora.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="">SCORA <br> <span class="subTitle">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span></a></li>
+            <li><a href="../StandingCommittees/scogs.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="">SCOGS <br> <span class="subTitle">Standing Committee on Global Surgery</span></a></li>
+            <li><a href="../StandingCommittees/scorp.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="">SCORP <br> <span class="subTitle">Standing Committee on Human Rights & Peace</span></a></li>
+            <li><a href="../StandingCommittees/scoph.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="">SCOPH <br> <span class="subTitle">Standing Committee on Public Health</span></a></li>
+            <li><a href="../StandingCommittees/scome.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="">SCOME <br> <span class="subTitle">Standing Committee on Medical Education</span></a></li>
+        </ul>
+        </li>
+        <li><a href="../TAT-platform/tathome.html" onclick="closeMenu()">TAT-platform</a></li>
+        <li><a data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html" onclick="closeMenu()">Photo Album</a></li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span id="mobilemenutitle" data-translate="contact">Contact</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../Contact/contactform.html" onclick="closeMenu()">E-mail</a></li>
+            <li><a href="../Socials/socials.html" onclick="closeMenu()" data-translate="socials">Socials</a></li>
+            <li><a data-translate="location" href="./Location/location.html" onclick="closeMenu()">Location</a></li>
+        </ul>
+        </li>
+        <li>
+            <a onclick="toggleSubmenu(event)"><span class="mobilemenutitle" data-translate="language">Language</span>
+                <img class="languageFlag current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English"><span class="arrow">▶</span>
+            </a>
+            <ul class="submenumobile">
+                <li>
+                    <a onclick="setLanguageAlt('en')">
+                        English
+                        <img class="languageFlag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('fr')">
+                        Français
+                        <img class="languageFlag" src="../../Download CI/Languageflags/french.png" alt="Français">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('nl')">
+                        Nederlands
+                        <img class="languageFlag" src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <header>
+        <div class="topBar">
+            <a href="../AboutUs/sponsorus.html" data-translate="howtosponsorus">How to sponsor us?</a>
+            <a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a>
+            <a href="../GOG/gog.html" data-translate="transgressivebehaviour">Transgressive behaviour</a>
+        </div>
+        <div class="bottomBar">
+            <div class="leftMenu">
+                <a href="../index.html" class="headerLogoLink">
+                    <img src="../../Download CI/Logo/logo/logo_local_committees/rgb/gent/gent_rgb.png" alt="BeMSA Gent Logo">
+                </a>
+            </div>
+            <div class="rightMenu">
+                <div class="dropdown dropdown-parent">
+                    <a data-translate="aboutus" class="rightmenubutton">About Us</a>
+                    <div class="submenu">
+                        <a data-translate="bemsagent" href="../AboutUs/bemsagent.html">BeMSA Ghent</a>
+                        <div class="dropdown side-dropdown">
+                            <a data-translate="ourteam" href="../AboutUs/ourteam.html">Our Team</a>
+                            <div class="side-submenu">
+                                <a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard">Current Board</a>
+                                <a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards">Past Boards</a>
+                                <a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke">Project Coordinators</a>
+                            </div>
+                        </div>
+                        <a data-translate="missandvis" href="../AboutUs/missionandvision.html">Mission & Vision</a>
+                        <a data-translate="timeline" href="../AboutUs/timeline.html">Timeline</a>
+                        <a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer">BeMSA | National</a>
+                        <a data-translate="ourpartners" href="../AboutUs/partners.html">Our Partners</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="calendar">Calendar</a>
+                    <div class="submenu">
+                        <a href="../Calendar/upcomingevents.html" data-translate="upcomingevents">Upcoming Events</a>
+                        <a href="../Calendar/calendar.html" data-translate="bemsacalendar">BeMSA calendar</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton">Standing Committees</a>
+                    <div class="scmenu">
+                        <a href="../StandingCommittees/score.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="SCORE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORE</span>
+                                <span class="sc-long">Standing Committee on Research Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scope.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="SCOPE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPE</span>
+                                <span class="sc-long">Standing Committee on Professional Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scora.html" >
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="SCORA-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORA</span>
+                                <span class="sc-long">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scogs.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="SCOGS-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOGS</span>
+                                <span class="sc-long">Standing Committee on Global Surgery</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scoph.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="SCOPH-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPH</span>
+                                <span class="sc-long">Standing Committee on Public Health</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scorp.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="SCORP-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORP</span>
+                                <span class="sc-long">Standing Committee on Human Rights and Peace</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scome.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="SCOME-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOME</span>
+                                <span class="sc-long">Standing Committee on Medical Education</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="rightmenubutton" href="../TAT-platform/tathome.html">TAT-platform</a>
+                <a class="rightmenubutton" data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html">Photo Album</a>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="contact">Contact</a>
+                    <div class="submenu">
+                        <a href="../Contact/contactform.html">E-mail</a>
+                        <a href="../Socials/socials.html" data-translate="socials">Socials</a>
+                        <a data-translate="location" href="../Location/location.html">Location</a>
+                    </div>
+                </div>
+                <div class="dropdown lang-dropdown dropdown-parent">
+                    <a class="rightmenubutton" href="#">
+                        <img class="lang-icon current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+
+                    <div class="submenu lang-menu">
+                        <a onclick="setLanguageAlt('en')">
+                            <img src="../../Download CI/Languageflags/English.webp" alt="English">
+                        </a>
+                        <a onclick="setLanguageAlt('fr')">
+                            <img src="../../Download CI/Languageflags/french.png" alt="Français">
+                        </a>
+                        <a onclick="setLanguageAlt('nl')">
+                            <img src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="privacypolicycontainer">
+            <h1 data-translate="bemsagentpivacypolicy">BeMSA Ghent Privacy Policy</h1>
+            <p><span data-translate="p1">This privacy policy applies to our website</span> (<a href="https://www.bemsa.be/" target="_blank" rel="noopener noreferrer" class="textLink">BeMSA.be</a> <span data-translate="p2">and</span> <a target="_blank" rel="noopener noreferrer" href="../index.html" class="textLink">BeMSA-Gent.be</a>) mailing lists and surveys/data collection via our BeMSA.be domain.</p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Who are we?</h2>
+            <p>
+                The <a href="../AboutUs/bemsagent.html" class="textLink">Belgian Medical Students' Association (BeMSA)</a> is a Belgian student organisation. From the 2018-2019 academic year, it represents medical students from eight faculties across the country, while also making international connections through the existing network of 137 national member organisations of the <a href="https://ifmsa.org/" target="_blank" rel="noopener noreferrer"  class="textLink">International Federation of Medical Students' Associations (IFMSA)</a>.
+                 Every year, we organise a series of events at local, national and international levels. In addition, our clinical and research exchange programmes send more than 100 Belgian students abroad every year, while hosting an equal number of foreign students. This allows them to discover innovations in medicine, healthcare systems and healthcare delivery in different settings around the world.
+                 BeMSA brings people together to exchange, discuss and initiate projects with the aim of creating a healthier world. It equips medical students with the skills and resources needed to become health leaders. With the help of the IFMSA, it also advocates for the pressing issues that matter to us in shaping the world we want to live in. And it produces results: our projects, campaigns and activities positively influence doctors to stand alongside the communities they serve.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Our Goal</h2>
+            <p>
+                This privacy policy has been created to explain to you when, why and how we collect personal information about our members, within and outside this site and our mailing lists. This explanation includes how we use and store this information, and the conditions under which we may disclose this information to others, and how we keep this information secure.
+                Onder de General Data Protection Regulation (GDPR) kwalificeert BeMSA zich als een "gegevensbeheerder". Dit betekent dat wij geheel of gedeeltelijk verantwoordelijk zijn voor het bepalen van het doel van en de middelen voor de verwerking van persoonsgegevens. Wij zijn onder deze wet verplicht om u te informeren over de informatie in dit privacybeleid. Vragen over ons beleid kunt u sturen naar <a href="mailto:webmaster@bemsa-gent.be" class="textLink">webmaster@bemsa-gent.be</a>. Als u wilt dat wij uw persoonlijke gegevens verwijderen, kunt u ook contact met ons opnemen via dit e-mailadres. Anders worden uw gegevens na 3 jaar verwijderd.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Our commitment</h2>
+            <p>
+                In line with the core principles of the GDPR, we are committed to the following regarding our use of your personal data</p>
+                <ol>
+                    <li>Lawful, fair and transparent data collection: we are committed to ensuring that your data is collected and stored in such a way.</li>
+                    <li>Purpose limitation: we are committed to ensuring that the data we collect serves a purpose that has been clearly communicated to you.</li>
+                    <li>Data minimisation: in line with the previous point, we also strive to limit our collection to data that is strictly necessary for our purpose.</li>
+                    <li>Truthfulness and accuracy: we commit to ensuring that your data is kept as accurate and up-to-date as possible.</li>
+                    <li>Storage limitation: we do not keep your data longer than necessary for a specific purpose.</li>
+                    <li>Integrity and confidentiality: we undertake to implement or ensure measures that ensure that your data is given an appropriate level of security.</li>
+                </ol>
+                <p>Whether through this privacy policy or by other means, in the spirit of ensuring a higher level of transparency, we will do our best to ensure that you understand the purpose of any data collection we do, how we process it and how you can correct or delete it, should you wish to do so.</p>
+            
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">How do we collect personal information?</h2>
+            <p>
+                BeMSA collects personal information in several ways:
+            </p>
+                <ul>
+                    <li>E-mail and written correspondence</li>
+                    <li>Application forms / Registration forms</li>
+                    <li>Direct contact</li>
+                    <li>Surveys and research forms</li>
+                    <li>In all cases, it will be clear and obvious to you when we collect your data.</li>
+                </ul>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">What personal information do we collect?</h2>
+            <p>
+                We collect information about you when you contact us through any of the various activities described in the list below:</p>
+                <ol>
+                    <li>BeMSA Professional and Research Exchanges</li>
+                    <li>BeMSA National General Meetings (NGA) and Training Events</li>
+                    <li>Participation in BeMSA activities and projects</li>
+                    <li>Small working groups (SWGs) within BeMSA</li>
+                    <li>Opportunities for external representation</li>
+                    <li>Surveys and/or research activities through the BeMSA network</li>
+                    <li>BeMSA alumni network</li>
+                </ol>
+                <p>In these cases, we may collect the information described below:</p>
+                <ol>
+                    <li>Name, date of birth, place of birth and country of origin</li>
+                    <li>Contact details: e-mail address, passport or identity card details, telephone numbers, postal address or other physical addresses</li>
+                    <li>Fysieke gegevens: geslacht, gezondheidsvereisten (voor het verlenen van passende diensten)</li>
+                    <li>Curriculum Vitae, including current employment, past employment, education and experience in a specific field related to the purpose of data collection</li>
+                    <li>Additional information that may be required on a case-by-case basis.</li>
+                </ol>
+            <p>
+                Any additional need for information in particular cases will be clearly communicated to you, including the reasons for its collection and the duration of its retention.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">How is your information used?</h2>
+            <p>
+                As we have already mentioned, the personal data we actively collect from you is almost always related to one of the seven activities listed under point five "What personal information do we collect". Currently, BeMSA does not engage in targeted advertising, and so we do not share data with external parties for marketing or advertising purposes. The personally identifiable information we collect from you may be used for the following purposes:
+            </p>
+                <ul>
+                    <li>Selection of participants for a BeMSA activity, project or exchange</li>
+                    <li>Selection of participants to represent BeMSA at an event</li>
+                    <li>Provision of services or information on our activities</li>
+                    <li>Impact assessment of BeMSA activities and projects</li>
+                    <li>
+                        Information on opportunities and calls for input to improve our services
+                    </li>
+                    <li>
+                        Archived for a certain time to ensure legal liability of related parties based on specific, pre-agreed terms acceptable to both BeMSA and the related parties.
+                    </li>
+                </ul>
+            <p>
+                We will regularly evaluate the necessity of this personal data for our activities and adhere to the retention period we indicated when requesting this data or until such time as the data is no longer needed for the originally stated purpose, whichever comes first. Please note that in some cases, specific data is indispensable for the activity in question and without it BeMSA will not be able to select, provide or transfer the request. We would also like to stress that we do not currently carry out any automated decision-making, including profiling, based on the personal data we obtain from you.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">What is the legal basis for data collection by BeMSA?</h2>
+            <p>
+                Under the GDPR, there are six legal bases for data collection, as set out in Article 6 of EU law. At least one must apply when a party processes personal data
+            </p>
+                <ol>
+                    <li>Consent: The person has clearly given an organisation permission to process personal data for a specific purpose.</li>
+                    <li>Contract: The data processing is necessary for a contract that exists with the person, or because the person has asked for specific steps to be taken before entering into a contract.</li>
+                    <li>Legal obligation: Data processing is necessary for the organisation to comply with the law, with the exception of contractual obligations.</li>
+                    <li>Vital interests: The data processing is necessary for the organisation to protect an individual's life.</li>
+                    <li>Public task: Data processing is necessary for the performance of a task in the public interest or for the organisation's official functions and the task or function has a clear basis in law.</li>
+                    <li>Justified interests: Data processing is necessary for legitimate interests or the legitimate interests of a third party, unless there is a good reason to protect the data subject's personal data that outweighs these legitimate interests.</li>
+                </ol>
+            <p>
+                BeMSA will ensure that the legal bases are respected at all times and that at least one of the conditions mentioned above is met. All activities related to the collection of personal data by BeMSA and its officers will be supervised by the BeMSA Board to ensure compliance with the aforementioned bases.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Cases of data sharing with a third party</h2>
+            <p>
+                BeMSA will not sell, rent or otherwise share your personal data for marketing or targeted advertising purposes. We also want to assure you that any instance of active data sharing will only take place with your consent through a clearly differentiated explanation of the purpose of such sharing before, during or after the data collection process. Following are the entities with which we may share data and for what reason:
+            </p>
+                <ol>
+                    <li><b>Organisers of our National General Meetings (NGA):</b> at times, we will need to share specific personal data with organisers of our National General Meetings to ensure that they will be able to provide adequate and appropriate services to applicants.</li>
+                    <li>
+                        <b>Agencies, institutions or academics for research purposes:</b> we may authorise third-party organisations to work with our network for data collection or research purposes. In all cases, we will ensure that the process complies with our research policy and that the data collection contains as little identifiable data as possible.
+                    </li>
+                    <li><b>Software or technical vendors:</b> third-party vendors that enable us to carry out efficient digital processes and provide a satisfactory service to our members.</li>
+                    <li><b>BeMSA Local Committees, Officials, Executive Board:</b> in those cases where data is indispensable for application and selection processes, or conveying the relevant information to all parties involved.</li>
+                    <li><b>Law enforcement or regulatory authorities:</b> we may need to transfer specific data if we are required to disclose or share your personal data to comply with legal obligations or to protect the rights, property or safety of our members and users.</li>
+                </ol>
+            <p>
+                This is an indicative and not an exhaustive list. Please note that when we share personal data, we take all reasonable steps to ensure that the third party hanoles it appropriately and securely. In all cases, we only share information that is absolutely relevant and clearly necessary for providing the service or fulfilling the purpose of sharing data. Especially with partners not directly related to our organisation, we will establish a contract to ensure secure hanoling of this data and clearly limit how they can use the shared data. In the case of law enforcement and regulatory authorities, where contracts do not apply, we will continue to make all reasonable efforts to ensure that your privacy remains protected.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">For how long do we hold your personal information?</h2>
+            <p>
+                We keep personal information only as long as necessary for the purpose of data collection. This purpose is explained in more detail during data collection. In general terms, we retain personal information for as long as required by law or as necessary for record-keeping and legal claims.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Where do we store your personal information?</h2>
+            <p>
+                We store most of the data we collect in our domain associated with Google Workspace and our web hosting service. In all cases, we strive or will continue to strive to ensure that the organisations we partner with have adequate data protection and confidentiality clauses regarding data collection that comply with GDPR requirements.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Security measures to protect the loss, misuse or alteration of your data</h2>
+            <p>
+                We will establish a robust internal guideline for managing personal data within BeMSA. This will enable us to keep track of, restrict and in specific cases: remove access to your personal data from administrators within BeMSA. In all cases, personal data will only be shared with officers who need it for a specific purpose, in line with what is described during the data collection process.
+                In order to reduce uncontrollable data dissemination and improve our ability to control access to the personal data we collect, we regularly request and strive for our officers to work in a cloud-based environment entirely within the BeMSA.be domain. We will continuously strive to make the storage of this personally identifiable data as secure as possible.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Other websites</h2>
+            <p>
+                Parts of this website may contain links to other sites, such as related agencies with resource materials that support our content, or partner organisations we work with. We would like to clarify that we are not responsible for the content or privacy policies of these other sites, and we encourage you to be aware of the privacy policies of these sites before taking any actions.
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Your rights when we process your data</h2>
+            <p>
+                The European Union's General Data Protection Regulation draws attention to certain rights of citizens of countries within the EU and EEA whose information is collected by an organisation (as data subjects). The following is a brief summary of your rights in relation to data collected by BeMSA:
+            
+                <ol>
+                    <li><b>Access:</b> you have the right to request the personal information we hold about you. If you would like a copy of this activity, please contact us at the e-mail address listed below.</li>
+                    <li><b>Correction:</b> you have the right to request a rectification of incomplete, inaccurate or false information about your person held by us.</li>
+                    <li>
+                        <b>Deletion:</b> you have the right to request deletion of parts or all of your personal data held by us on these grounds without undue delay:
+                        <ul>
+                            <li>If you consider that the data is no longer necessary in relation to the purposes for which it was collected or processed</li>
+                            <li>When you withdraw your consent to the use of your data</li>
+                            <li>When you have objected to the use of the data</li>
+                            <li>When you believe that the use of the data is against the law</li>
+                        </ul>
+                    </li>
+                    <li><b>Object:</b> you can object to the use of your data for marketing, newsletter or mailing purposes at any time. Unless there are compelling legitimate reasons, we will immediately stop using this personal data.</li>
+                    <li><b>Limit our use of your data</b> this may happen when you consider that you do not want your data to be deleted from our storage, but you no longer consent to the use of the data for the purposes specified during the collection process or prescribed in this privacy policy.</li>
+                    <li><b>Withdraw consent to use:</b> regulations require that withdrawing consent should be as simple as giving it. As such, you are free to withdraw your consent to data we have collected, and we will immediately cease our use of the information for the purpose(s) for which you initially consented.</li>
+                </ol>
+            </p>
+            <h2><img src="../../Download CI/Pattern/patterntitle.webp" alt="">Contact information</h2>
+            <p>If you find any breaches that you would like to see corrected or would like more information about our privacy policy, please contact us at president@BeMSA.be with the subject line [GDPR INQ].</p>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-column">
+            <h3 data-translate="bemsanpo">BeMSA npo</h3>
+            <ul>
+                <li><a data-translate="aboutus" href="../AboutUs/bemsagent.html">About Us</a></li>
+                <li><a data-translate="bemsagentonthenews" href="../News/news.html">BeMSA Gent on the News</a></li>
+                <li><a data-translate="bemsanational" href="https://www.bemsa.be/" target="_blank" rel="noopener noreferrer">BeMSA | National</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="legal">Legal</h3>
+            <ul>
+                <li><a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a></li>
+                <li><a data-translate="transgressivebehaviour" href="../GOG/gog.html">Transgressive behaviour</a></li>
+                <li><a href="https://docs.google.com/document/d/1BUPTQK4D-L76CK5wu9N83QkAfNaDvYoW/edit#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer" data-translate="bylaws">By-laws</a></li>
+                <li>BE 0536.703.374</li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="contact">Contact</h3>
+            <ul>
+                <li><a href="mailto:info@bemsa-gent.be" target="_blank" rel="noopener noreferrer">info@bemsa-gent.be</a></li>
+                <li><a href="../Location/location.html">C Heymanslaan 10 bus -1B3 | Ghent 9000</a></li>
+                <li><a data-translate="contactform" href="../Contact/contactform.html">Contact form</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column footer-brand">
+                <a class="imageFooter" href="../index.html"><img src="../../Download CI/Logo/OIP.webp" alt=""></a>
+                <div class="footer-socials">
+                    <a href="https://www.bing.com/ck/a?!&&p=ae8a3bd15ff8306ad873a9a50e37d58b583d0399645bdac7ca6a4766f207c17aJmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=facebook+bemsa+gent&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0JlTVNBR2VudC8" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=04266983d4e99b1e79bc6fd928b0d999dd557d4c1bd708ec5386b0ab4da462f4JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=instagram+bemsa+gent&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9iZW1zYV9nZW50Lw" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@bemsa_gent" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=541c6d8ca824ffff9367b2669c3d1ec6f7df03de2a451ae509147a46ced6ad15JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=youtube+bemsa+gent&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQGJlbXNhZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=ea6c151f7bfae94d21f0a67ed4034ff3115b434b0ad48c4480d4074a4ffa0934JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=BeMSA+Gent+Linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvYmVtc2EtZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" ></i></a>
+                </div>
+            <div class="footer-accent-bar"></div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><span id="year"></span> <span data-translate="bemsanpofooter">BeMSA npo</span></p>
+            <div class="footer-bottom-links">
+                <a href="../AboutUs/sponsorus.html" data-translate="sponsorbemsanpo">Sponsor BeMSA npo</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../TranslationFiles/language.js"></script>
+    <script src="../BaseStyles/header.js"></script>
+    <script>
+        history.scrollRestoration = "manual";
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 50);
+        });
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

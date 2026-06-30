@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title data-translate="htmltitlescorp">BeMSA Ghent | SCORP</title>
+    <link rel="stylesheet" href="./standingcommitte.css">
+    <link rel="stylesheet" href="./scorp.css">
+    <link rel="stylesheet" href="../BaseStyles/header.css">
+    <link rel="stylesheet" href="../BaseStyles/footer.css">
+    <link rel="shortcut icon" href="../../Download CI/BeMSA Icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="burgerContainer">
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <a href="../index.html" data-translate="bemsagent">BeMSA Ghent</a>
+    </div>
+    <div id="backdrop" class="backdrop" onclick="closeMenu()"></div>
+    <div id="mobileMenu" class="overlay">
+    <div class="close-btn" onclick="closeMenu()">✕</div>
+    <ul class="menu">
+        <li><a href="../index.html" onclick="closeMenu()"><img src="../../Download CI/Logo/BeMSALogoNB.png" alt=""></a></li>
+
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span data-translate="aboutus" class="mobilemenutitle">About Us</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="bemsagent" href="../AboutUs/bemsagent.html" onclick="closeMenu()">BeMSA Ghent</a></li> 
+            <li><a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard" onclick="closeMenu()">Current Board</a></li>
+            <li><a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards" onclick="closeMenu()">Past Boards</a></li>
+            <li><a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke" onclick="closeMenu()">Project Coordinators</a></li>
+            <li><a href="../AboutUs/missionandvision.html" data-translate="missandvis" onclick="closeMenu()">Mission & Vision</a></li>
+            <li><a data-translate="timeline" href="../AboutUs/timeline.html" onclick="closeMenu()">Timeline</a></li>
+            <li><a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">BeMSA | National</a></li>
+            <li><a href="../AboutUs/partners.html" data-translate="ourpartners" onclick="closeMenu()">Our Partners</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a href="#" onclick="toggleSubmenu(event)" >
+            <span class="mobilemenutitle" data-translate="calendar">Calendar</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="upcomingevents" href="../Calendar/upcomingevents.html" onclick="closeMenu()">Upcoming Events</a></li>
+            <li><a data-translate="bemsacalendar" href="../Calendar/calendar.html" onclick="closeMenu()">BeMSA Calendar</a></li>
+        </ul>
+        </li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            Standing Committees <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../StandingCommittees/score.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="">SCORE <br> <span class="subTitle">Standing Committee on Research Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scope.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="">SCOPE <br> <span class="subTitle">Standing Committee on Professional Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scora.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="">SCORA <br> <span class="subTitle">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span></a></li>
+            <li><a href="../StandingCommittees/scogs.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="">SCOGS <br> <span class="subTitle">Standing Committee on Global Surgery</span></a></li>
+            <li><a href="../StandingCommittees/scorp.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="">SCORP <br> <span class="subTitle">Standing Committee on Human Rights & Peace</span></a></li>
+            <li><a href="../StandingCommittees/scoph.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="">SCOPH <br> <span class="subTitle">Standing Committee on Public Health</span></a></li>
+            <li><a href="../StandingCommittees/scome.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="">SCOME <br> <span class="subTitle">Standing Committee on Medical Education</span></a></li>
+        </ul>
+        </li>
+        <li><a href="../TAT-platform/tathome.html" onclick="closeMenu()">TAT-platform</a></li>
+        <li><a data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html" onclick="closeMenu()">Photo Album</a></li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span id="mobilemenutitle" data-translate="contact">Contact</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../Contact/contactform.html" onclick="closeMenu()">E-mail</a></li>
+            <li><a href="../Socials/socials.html" onclick="closeMenu()" data-translate="socials">Socials</a></li>
+            <li><a data-translate="location" href="./Location/location.html" onclick="closeMenu()">Location</a></li>
+        </ul>
+        </li>
+        <li>
+            <a onclick="toggleSubmenu(event)"><span class="mobilemenutitle" data-translate="language">Language</span>
+                <img class="languageFlag current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English"><span class="arrow">▶</span>
+            </a>
+            <ul class="submenumobile">
+                <li>
+                    <a onclick="setLanguageAlt('en')">
+                        English
+                        <img class="languageFlag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('fr')">
+                        Français
+                        <img class="languageFlag" src="../../Download CI/Languageflags/french.png" alt="Français">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('nl')">
+                        Nederlands
+                        <img class="languageFlag" src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <header>
+        <div class="topBar">
+            <a href="../AboutUs/sponsorus.html" data-translate="howtosponsorus">How to sponsor us?</a>
+            <a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a>
+            <a href="../GOG/gog.html" data-translate="transgressivebehaviour">Transgressive behaviour</a>
+        </div>
+        <div class="bottomBar">
+            <div class="leftMenu">
+                <a href="../index.html" class="headerLogoLink">
+                    <img src="../../Download CI/Logo/logo/logo_local_committees/rgb/gent/gent_rgb.png" alt="BeMSA Gent Logo">
+                </a>
+            </div>
+            <div class="rightMenu">
+                <div class="dropdown dropdown-parent">
+                    <a data-translate="aboutus" class="rightmenubutton">About Us</a>
+                    <div class="submenu">
+                        <a data-translate="bemsagent" href="../AboutUs/bemsagent.html">BeMSA Ghent</a>
+                        <div class="dropdown side-dropdown">
+                            <a data-translate="ourteam" href="../AboutUs/ourteam.html">Our Team</a>
+                            <div class="side-submenu">
+                                <a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard">Current Board</a>
+                                <a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards">Past Boards</a>
+                                <a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke">Project Coordinators</a>
+                            </div>
+                        </div>
+                        <a data-translate="missandvis" href="../AboutUs/missionandvision.html">Mission & Vision</a>
+                        <a data-translate="timeline" href="../AboutUs/timeline.html">Timeline</a>
+                        <a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer">BeMSA | National</a>
+                        <a data-translate="ourpartners" href="../AboutUs/partners.html">Our Partners</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="calendar">Calendar</a>
+                    <div class="submenu">
+                        <a href="../Calendar/upcomingevents.html" data-translate="upcomingevents">Upcoming Events</a>
+                        <a href="../Calendar/calendar.html" data-translate="bemsacalendar">BeMSA calendar</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton">Standing Committees</a>
+                    <div class="scmenu">
+                        <a href="../StandingCommittees/score.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="SCORE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORE</span>
+                                <span class="sc-long">Standing Committee on Research Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scope.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="SCOPE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPE</span>
+                                <span class="sc-long">Standing Committee on Professional Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scora.html" >
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="SCORA-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORA</span>
+                                <span class="sc-long">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scogs.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="SCOGS-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOGS</span>
+                                <span class="sc-long">Standing Committee on Global Surgery</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scoph.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="SCOPH-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPH</span>
+                                <span class="sc-long">Standing Committee on Public Health</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scorp.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="SCORP-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORP</span>
+                                <span class="sc-long">Standing Committee on Human Rights and Peace</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scome.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="SCOME-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOME</span>
+                                <span class="sc-long">Standing Committee on Medical Education</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="rightmenubutton" href="../TAT-platform/tathome.html">TAT-platform</a>
+                <a class="rightmenubutton" data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html">Photo Album</a>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="contact">Contact</a>
+                    <div class="submenu">
+                        <a href="../Contact/contactform.html">E-mail</a>
+                        <a href="../Socials/socials.html" data-translate="socials">Socials</a>
+                        <a data-translate="location" href="../Location/location.html">Location</a>
+                    </div>
+                </div>
+                <div class="dropdown lang-dropdown dropdown-parent">
+                    <a class="rightmenubutton" href="#">
+                        <img class="lang-icon current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+
+                    <div class="submenu lang-menu">
+                        <a onclick="setLanguageAlt('en')">
+                            <img src="../../Download CI/Languageflags/English.webp" alt="English">
+                        </a>
+                        <a onclick="setLanguageAlt('fr')">
+                            <img src="../../Download CI/Languageflags/french.png" alt="Français">
+                        </a>
+                        <a onclick="setLanguageAlt('nl')">
+                            <img src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Standing Committee on Human Rights and Peace</h1>
+        <div class="subTitle">
+            <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+            <h2>What is the SCORP?</h2>
+        </div>
+        <p>Watch this video to get know our mission and projects.</p>
+        <section class="section">
+            <div class="videoWrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/cbvXbLAhDXU?si=1l6EO_LboYOWvnms"
+                    title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+        </section>
+        <p>
+            The Standing Committee on Human Rights and Peace (SCORP) brings together students who believe in a world based on peace, equal opportunities, and international and intercultural solidarity. In other words, a world where all human rights are fully respected. Through our projects and events, we invite fellow students to join us in striving for this vision of the world.
+        </p>
+        <div class="subTitle">
+            <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+            <h2>SCORP Projects</h2>
+        </div>
+        <p>SCORP organises several events throughout the academic year, press the buttons below to discover more about our projects!</p>
+        <span class="buttonBlock">
+            <a href="#humanrightsweek"><button>Human Rights Week</button></a>
+            <a href="#cursusvlaamsegebarentaal"><button>Signlanguage in healthcare</button></a>
+            <a href="#schrijfzevrijactie"><button>Schrijf-ze-vrij Actie</button></a>
+            <a href="sportenmetmensenbeperking"><button>Sporten met mensen met een beperking</button></a>
+        </span>
+        <div class="subTitle">
+            <img src="../../Download CI/Pattern/patterntitlepng.png" alt="">
+            <h2>Local Officers on Human Rights and Peace</h2>
+        </div>
+        <p>
+            The Local Officers on Human Rights and Peace (LORPs) are the board members responsible for coordinating and managing SCORP within BeMSA Ghent. They support and guide the various human rights and peace-related projects, organise activities and trainings, and ensure that students can actively engage in promoting human rights, peace, equality, and social justice within the community.
+        </p>
+        <section class="teamSection">
+            <div class="teamCard">
+                <img src="../../Files/BoardPictures/Current/Local Officers/lorp1.webp">
+
+                <h3 data-nameFunction="lorp1"></h3>
+
+                <span class="function">LORP</span>
+
+                <p>
+                    <a href="mailto:LORP@bemsa-gent.be">
+                        LORP@bemsa-gent.be
+                    </a>
+                </p>
+            </div>
+
+            <div class="teamCard">
+                <img src="../../Files/BoardPictures/Current/Local Officers/lorp2.webp">
+
+                <h3 data-nameFunction="lorp2"></h3>
+
+                <span class="function">LORP</span>
+
+                <p>
+                    <a href="mailto:LORP@bemsa-gent.be">
+                        LORP@bemsa-gent.be
+                    </a>
+                </p>
+            </div>
+        </section>
+        <h1>SCORP Projects</h1>
+        <section class="miniEventSection">
+            <article class="miniEventCard" id="humanrightsweek">
+
+                <div class="eventPoster">
+                    <img src="../../Files/StandingCommittees/SCORP/ProjectCovers/Current/HumanRightsWeek.png" alt="Event Poster">
+                </div>
+
+                <div class="eventInfo" >
+
+                    <h3>Human Rights Week</h3>
+
+                <p>
+                    In our country, Belgium, human rights seem self-evident and normal. And that's how it's supposed to be. Human rights are fundamental rights and freedoms for all people regardless of their nationality, gender, national or ethnic origin, race, religion, language or other status.
+                    <br>
+                    However, this is not self-evident for everyone and we don't dwell on this enough. That is why BeMSA organizes an awareness-raising campaign every year on Human Rights Day (10th of December) to remind us as students of the existence of human rights and the need to keep fighting for the preservation and expansion of these rights.
+                    <br>
+                    If you would like to learn more about human rights, you can always visit the Amnesty International website.
+                </p>
+
+                    <div class="eventLinks">
+                        <a href="../AboutUs/projectverantwoordelijken.html#humanrightsweek">Project Coordinators</a>
+                        <a href="#">Picture Drive</a>
+                    </div>
+
+                </div>
+
+            </article>
+        </section>
+        <section class="section">
+            <div class="videoWrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/jEHovakL7rY?si=Jn7_3umKcjWADkVK"
+                    title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+        </section>
+        <section class="miniEventSection">
+            <article class="miniEventCard" id="cursusvlaamsegebarentaal">
+                <div class="eventPoster">
+                    <img src="../../Files/StandingCommittees/SCORP/ProjectCovers/Current/InitiatieCursusVlaamseGebarenTaal.png" alt="Event Poster">
+                </div>
+
+                <div class="eventInfo">
+
+                    <h3>Sign language in healthcare</h3>
+                    <p> It is very important for future doctors to have insight into the barriers patients may face in healthcare. When a deaf or hard-of-hearing patient seeks medical assistance, they can encounter numerous challenges, such as the fact that most doctors do not know sign language and that an interpreter may not be readily available. For this reason, we are organising the “Sign Language in Healthcare Course.” During this course, deaf and hard-of-hearing individuals will inform us about the barriers they face in daily life and will then teach us the basics of sign language. Further practical information will follow later.
+                        <br>
+                        For more information, be sure to keep an eye on our social media, where you will be able to register for the courses.
+                        <br>
+                        For more information on sign language, more extensive courses, etc., please visit the website of the Vlaams Gebarentaal Centrum.
+                    </p>
+                    <div class="eventLinks">
+                        <a href="../AboutUs/projectverantwoordelijken.html#cursusvlaamsegebarentaal">Project Coordinators</a>
+                        <a href="#">Picture Drive</a>
+                    </div>
+                </div>
+
+            </article>
+            <article class="miniEventCard" id="schrijfzevrijactie">
+
+                <div class="eventPoster">
+                    <img src="../../Files/StandingCommittees/SCORP/ProjectCovers/Current/SchrijfZeVrij.png" alt="Event Poster">
+                </div>
+
+                <div class="eventInfo">
+
+                    <h3>Schrijf-ze-vrij Actie</h3>
+
+                    <p>BeMSA Ghent actively engages in human rights advocacy, and on the occasion of the International Human Rights Day on December 10, we organise a stand throughout that week in K3 of Ghent University Hospital, near the KCGG library. At this stand, participants are given the opportunity to write letters for Amnesty International, with the aim of supporting individuals who have been unjustly imprisoned.</p>
+
+                    <h4>What does the “Write for Rights” action involve?</h4>
+
+                    <p>
+                        But what exactly is the “Write for Rights” campaign? Around the world, there are people who stand up for human rights, environmental and climate protection, and the fight against racism, discrimination, and inequality. Unfortunately, not everyone is able to freely defend these rights or engage in such activities without risking unjust imprisonment or prosecution. Some face long prison sentences without having committed any crime, while others risk even the death penalty. By writing letters, we can put pressure on authorities. With enough letters, the chances of securing the release of these individuals increase significantly.
+                        <br>
+                        Would you also like to contribute to the release of someone who stood up for human rights? Then be sure to visit our stand in K3! Writing letters can truly make a difference, there have already been cases where individuals were freed thanks to the collective pressure of writing campaigns like this.
+                        <br>
+                        More information can be found on the Amnesty International website.
+                    </p>
+                    <div class="eventLinks">
+                        <a href="../AboutUs/projectverantwoordelijken.html#schrijfzevrijactie">Project Coordinators</a>
+                        <a href="#">Picture Drive</a>
+                    </div>
+                </div>
+
+            </article>
+            <article class="miniEventCard" id="sportenmetmensenbeperking">
+
+                <div class="eventPoster">
+                    <img src="../../Files/StandingCommittees/SCORP/ProjectCovers/Current/Sportdag voor kinderen met een beperking.png" alt="Event Poster">
+                </div>
+
+                <div class="eventInfo">
+                    <h3>Sports for Children with Disabilities</h3>
+                    <p>The project “Sports for Children with Disabilities” was first organised by BeMSA in the 2016–2017 academic year. The aim of the project is, on the one hand, to organise a fun sports day for young people with a mental or physical disability, and on the other hand to give medical students the opportunity to learn in a simple and enjoyable way how to interact and communicate with people with disabilities. In our curriculum, too little time is devoted to this, even though it is something every healthcare professional will inevitably encounter during their career.</p>
+                    <h4>What?</h4>
+                    <p>Through our sports day, we aim to provide both the pupils and the students from the participating schools with a fun and educational experience.</p>
+
+                    <div class="eventLinks">
+                        <a href="../AboutUs/projectverantwoordelijken.html#sportenmetmensenbeperking">Project Coordinators</a>
+                        <a href="#">Picture Drive</a>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-column">
+            <h3 data-translate="bemsanpo">BeMSA npo</h3>
+            <ul>
+                <li><a data-translate="aboutus" href="../AboutUs/bemsagent.html">About Us</a></li>
+                <li><a data-translate="bemsagentonthenews" href="../News/news.html">BeMSA Gent on the News</a></li>
+                <li><a data-translate="bemsanational" href="https://www.bemsa.be/" target="_blank" rel="noopener noreferrer">BeMSA | National</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="legal">Legal</h3>
+            <ul>
+                <li><a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a></li>
+                <li><a data-translate="transgressivebehaviour" href="../GOG/gog.html">Transgressive behaviour</a></li>
+                <li><a href="https://docs.google.com/document/d/1BUPTQK4D-L76CK5wu9N83QkAfNaDvYoW/edit#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer" data-translate="bylaws">By-laws</a></li>
+                <li>BE 0536.703.374</li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="contact">Contact</h3>
+            <ul>
+                <li><a href="mailto:info@bemsa-gent.be" target="_blank" rel="noopener noreferrer">info@bemsa-gent.be</a></li>
+                <li><a href="../Location/location.html">C Heymanslaan 10 bus -1B3 | Ghent 9000</a></li>
+                <li><a data-translate="contactform" href="../Contact/contactform.html">Contact form</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column footer-brand">
+                <a class="imageFooter" href="../index.html"><img src="../../Download CI/Logo/OIP.webp" alt=""></a>
+                <div class="footer-socials">
+                    <a href="https://www.bing.com/ck/a?!&&p=ae8a3bd15ff8306ad873a9a50e37d58b583d0399645bdac7ca6a4766f207c17aJmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=facebook+bemsa+gent&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0JlTVNBR2VudC8" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=04266983d4e99b1e79bc6fd928b0d999dd557d4c1bd708ec5386b0ab4da462f4JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=instagram+bemsa+gent&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9iZW1zYV9nZW50Lw" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@bemsa_gent" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=541c6d8ca824ffff9367b2669c3d1ec6f7df03de2a451ae509147a46ced6ad15JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=youtube+bemsa+gent&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQGJlbXNhZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=ea6c151f7bfae94d21f0a67ed4034ff3115b434b0ad48c4480d4074a4ffa0934JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=BeMSA+Gent+Linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvYmVtc2EtZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" ></i></a>
+                </div>
+            <div class="footer-accent-bar"></div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><span id="year"></span> <span data-translate="bemsanpofooter">BeMSA npo</span></p>
+            <div class="footer-bottom-links">
+                <a href="../AboutUs/sponsorus.html" data-translate="sponsorbemsanpo">Sponsor BeMSA npo</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../TranslationFiles/language.js"></script>
+    <script src="../BaseStyles/header.js"></script>
+    <script src="../boardData/boardAutoUpdate.js"></script>
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

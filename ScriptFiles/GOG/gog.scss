@@ -1,0 +1,260 @@
+@mixin displayFlex($dir, $just, $align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+$primaryFont : 'Montserrat', sans-serif;
+$secondayFont :'Raleway', sans-serif;
+
+$goldYellow : #F4D24A;
+$lightblue : #A1CCC5;
+$turquoise : #3FA3A8;
+$darkblue : #1E3142;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    overflow-x: hidden;
+}
+
+main{
+    width: min(950px, 92%);
+    margin: 3rem auto 2rem auto;
+
+    @include displayFlex(column, flex-start, stretch);
+    gap: 2rem;
+
+    animation: fadeUp 0.8s ease forwards;
+
+    h1{
+        font-size: 3rem;
+        color: $darkblue;
+        font-family: $primaryFont;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+
+    p{
+        font-family: $secondayFont;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: rgba(30, 49, 66, 0.85);
+
+        white-space: pre-line;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    button{
+        border: none;
+        outline: none;
+
+        padding: 1rem 1.6rem;
+        border-radius: 18px;
+
+        background: $darkblue;
+        color: white;
+
+        font-family: $primaryFont;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.3;
+
+        cursor: pointer;
+
+        transition:
+            transform 0.25s ease,
+            background 0.25s ease,
+            box-shadow 0.25s ease;
+
+        box-shadow: 0 10px 25px rgba(30, 49, 66, 0.12);
+
+        &:hover{
+            background: $turquoise;
+            transform: translateY(-3px);
+            box-shadow: 0 16px 30px rgba(63, 163, 168, 0.22);
+        }
+    }
+
+    ul{
+        @include displayFlex(column, flex-start, stretch);
+
+        gap: 0.9rem;
+
+        padding: 1.8rem 2rem;
+        border-radius: 24px;
+
+        background: rgba(161, 204, 197, 0.12);
+
+        font-family: $secondayFont;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: rgba(30, 49, 66, 0.88);
+
+        box-shadow: 0 10px 30px rgba(30, 49, 66, 0.06);
+
+        li{
+            margin-left: 1.2rem;
+            color: $darkblue;
+
+            &::marker{
+                color: $turquoise;
+            }
+
+            a{
+                position: relative;
+
+                text-decoration: none;
+
+                color: inherit;
+
+                font-family: $primaryFont;
+                font-weight: 600;
+
+                transition: color 0.25s ease;
+
+                &::after{
+                    content: "";
+
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.15rem;
+
+                    width: 0;
+                    height: 2px;
+
+                    background: $goldYellow;
+
+                    transition: width 0.25s ease;
+                }
+
+                &:hover{
+                    color: $turquoise;
+                }
+
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    /* DESKTOP LARGE */
+    @media (min-width: 1440px){
+        width: min(1050px, 85%);
+    }
+
+    /* LAPTOP */
+    @media (max-width: 1024px){
+
+        h1{
+            font-size: 2.7rem;
+        }
+
+        p,
+        ul{
+            font-size: 0.98rem;
+        }
+    }
+
+    /* TABLET */
+    @media (max-width: 768px){
+
+        width: 94%;
+        gap: 1.8rem;
+
+        h1{
+            font-size: 2.3rem;
+        }
+
+        button{
+            width: 100%;
+            text-align: center;
+        }
+
+        ul{
+            padding: 1.5rem;
+        }
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px){
+
+        margin: 2rem auto 1rem auto;
+        gap: 1.5rem;
+
+        h1{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        button{
+            font-size: 0.95rem;
+            padding: 0.95rem 1.2rem;
+            border-radius: 16px;
+        }
+
+        ul{
+            padding: 1.2rem 1.1rem;
+            border-radius: 20px;
+
+            font-size: 0.95rem;
+
+            li{
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    /* SMALL MOBILE */
+    @media (max-width: 400px){
+
+        h1{
+            font-size: 1.7rem;
+        }
+
+        button{
+            font-size: 0.9rem;
+        }
+
+        ul{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

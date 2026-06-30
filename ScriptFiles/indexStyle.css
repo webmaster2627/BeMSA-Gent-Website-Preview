@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+html body main {
+  padding-top: 200px;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+html body main .logoContainer {
+  display: none;
+}
+html body main .carouselWrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+html body main .carouselWrapper .carousel {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+html body main .carouselWrapper .carousel .carousel-container {
+  overflow: hidden;
+  padding: 0 10vw;
+}
+html body main .carouselWrapper .carousel .carousel-container .carousel-track {
+  display: flex;
+  transition: transform 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  list-style: none;
+}
+html body main .carouselWrapper .carousel .carousel-container .slide {
+  flex: 0 0 80%;
+  padding: 0 15px;
+  cursor: pointer;
+  opacity: 0.55;
+  transform: scale(0.9);
+  transition: all 0.45s ease;
+}
+html body main .carouselWrapper .carousel .carousel-container .slide img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 24px;
+  border: 4px solid transparent;
+  transition: all 0.45s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+html body main .carouselWrapper .carousel .carousel-container .slide:hover img {
+  border-color: #3FA3A8;
+}
+html body main .carouselWrapper .carousel .carousel-container .slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+html body main .carouselWrapper .carousel .carousel-container .slide.active img {
+  border-color: #F4D24A;
+}
+html body main .carouselWrapper .carousel .carousel-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 35px;
+}
+html body main .carouselWrapper .carousel .dot {
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50px;
+  background: #B4B4B3;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+html body main .carouselWrapper .carousel .dot:hover {
+  background: #3FA3A8;
+  transform: scale(1.1);
+}
+html body main .carouselWrapper .carousel .dot.active {
+  width: 44px;
+  background: #F4D24A;
+}
+@media (max-width: 1024px) {
+  html body main .carouselWrapper .carousel .carousel-container {
+    padding: 0 5%;
+  }
+  html body main .carouselWrapper .carousel .slide {
+    flex: 0 0 90%;
+  }
+}
+@media (max-width: 768px) {
+  html body main .carouselWrapper .carousel .carousel-container {
+    padding: 0;
+  }
+  html body main .carouselWrapper .carousel .slide {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  html body main .carouselWrapper .carousel .slide img {
+    border-radius: 18px;
+  }
+  html body main .carouselWrapper .carousel .dot.active {
+    width: 36px;
+  }
+}
+html body main .carouselWrapper .carousel::before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  z-index: -1;
+  pointer-events: none;
+}
+html body main .division {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+html body main .division img {
+  height: 48px;
+  width: auto;
+}
+html body main .division a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #3FA3A8;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 15px;
+  transition: ease 0.3s;
+}
+html body main .division:hover a {
+  transform: scale(1.03);
+}
+@media (max-width: 600px) {
+  html body main .division .division {
+    max-width: 100Vw;
+  }
+  html body main .division img {
+    height: 24px;
+    width: auto;
+  }
+  html body main .division a {
+    max-width: 60%;
+    font-size: 12px;
+    text-align: center;
+    padding: 0px;
+    padding-top: 15px;
+  }
+}
+html body main .logo-section {
+  margin-top: 1vh;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+html body main .logo-section .leftLogoSection, html body main .logo-section .rightLogoSection {
+  width: 30vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+html body main .logo-section .leftLogoSection .scShortExplain, html body main .logo-section .rightLogoSection .scShortExplain {
+  width: 28vw;
+  height: auto;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(63, 163, 168, 0.15);
+  border-radius: 28px;
+  box-shadow: 0 10px 40px rgba(30, 49, 66, 0.08), 0 2px 12px rgba(63, 163, 168, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+html body main .logo-section .leftLogoSection .scShortExplain p, html body main .logo-section .rightLogoSection .scShortExplain p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 10px;
+  color: #000000;
+}
+html body main .logo-section .leftLogoSection .scShortExplain p .scTitle, html body main .logo-section .rightLogoSection .scShortExplain p .scTitle {
+  font-weight: bold;
+}
+html body main .logo-section .leftLogoSection #scoreBlock, html body main .logo-section .rightLogoSection #scoreBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #scoreBlock span, html body main .logo-section .rightLogoSection #scoreBlock span {
+  color: #3244a1;
+}
+html body main .logo-section .leftLogoSection #scopeBlock, html body main .logo-section .rightLogoSection #scopeBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #scopeBlock span, html body main .logo-section .rightLogoSection #scopeBlock span {
+  color: #387fc7;
+}
+html body main .logo-section .leftLogoSection #scoraBlock, html body main .logo-section .rightLogoSection #scoraBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #scoraBlock span, html body main .logo-section .rightLogoSection #scoraBlock span {
+  color: #bf222d;
+}
+html body main .logo-section .leftLogoSection #scogsBlock, html body main .logo-section .rightLogoSection #scogsBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #scogsBlock span, html body main .logo-section .rightLogoSection #scogsBlock span {
+  color: #8e0a83;
+}
+html body main .logo-section .leftLogoSection #scophBlock, html body main .logo-section .rightLogoSection #scophBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #scophBlock span, html body main .logo-section .rightLogoSection #scophBlock span {
+  color: #ef6830;
+}
+html body main .logo-section .leftLogoSection #scomeBlock, html body main .logo-section .rightLogoSection #scomeBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #scomeBlock span, html body main .logo-section .rightLogoSection #scomeBlock span {
+  color: #000000;
+}
+html body main .logo-section .leftLogoSection #scorpBlock, html body main .logo-section .rightLogoSection #scorpBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #scorpBlock span, html body main .logo-section .rightLogoSection #scorpBlock span {
+  color: #549232;
+}
+html body main .logo-section .leftLogoSection #bemsaBlock, html body main .logo-section .rightLogoSection #bemsaBlock {
+  border-radius: 10px;
+}
+html body main .logo-section .leftLogoSection #bemsaBlock span, html body main .logo-section .rightLogoSection #bemsaBlock span {
+  color: #3FA3A8;
+}
+html body main .logo-section .orbit-container {
+  position: relative;
+  width: 40vw;
+  height: 80vh;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 1.2s ease;
+}
+html body main .logo-section .orbit-container.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+html body main .logo-section .orbit-container:hover {
+  animation-play-state: paused;
+}
+html body main .logo-section .orbit-container:hover .orbit-item {
+  animation-play-state: paused;
+}
+html body main .logo-section .orbit-container .center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+html body main .logo-section .orbit-container .center-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body main .logo-section .orbit-container .orbit-item {
+  --radius: 260px;
+  --angle: calc(360deg / 7 * var(--i));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin: -100px;
+  text-decoration: none;
+  animation: orbit 20s linear infinite;
+  animation-delay: calc(-2.8571428571s * var(--i));
+}
+html body main .logo-section .orbit-container .orbit-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+html body main .logo-section .orbit-container .orbit-item:hover img {
+  transform: scale(1.15);
+}
+@keyframes orbit {
+  from {
+    transform: rotate(calc(var(--angle))) translateX(var(--radius)) rotate(calc(var(--angle) * -1));
+  }
+  to {
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius)) rotate(calc((var(--angle) + 360deg) * -1));
+  }
+}
+html body main .sponsorsMain {
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+html body main .sponsorsMain .row {
+  width: min(1600px, 95%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem 5rem;
+}
+html body main .sponsorsMain a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+}
+html body main .sponsorsMain a:hover {
+  transform: scale(1.08);
+  opacity: 0.92;
+  cursor: pointer;
+}
+html body main .sponsorsMain img {
+  display: block;
+  width: auto;
+  height: clamp(90px, 13vh, 180px);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body main .sponsorsMain {
+  /* INDIVIDUAL LOGO SIZES */
+}
+html body main .sponsorsMain #odoo {
+  height: clamp(70px, 10vh, 130px);
+}
+html body main .sponsorsMain #ugent {
+  height: clamp(120px, 18vh, 240px);
+}
+html body main .sponsorsMain #cohezio {
+  height: clamp(70px, 10vh, 130px);
+}
+html body main .sponsorsMain #bf {
+  height: clamp(100px, 15vh, 200px);
+}
+html body main .sponsorsMain #amonis {
+  height: clamp(95px, 14vh, 185px);
+}
+html body main .sponsorsMain #vdkb {
+  height: clamp(95px, 14vh, 185px);
+}
+html body main .sponsorsMain {
+  /* TABLET */
+}
+@media (max-width: 1024px) {
+  html body main .sponsorsMain {
+    gap: 3rem;
+  }
+  html body main .sponsorsMain .row {
+    gap: 2rem 3rem;
+  }
+  html body main .sponsorsMain img {
+    height: clamp(75px, 10vh, 140px);
+  }
+  html body main .sponsorsMain #ugent {
+    height: clamp(100px, 14vh, 190px);
+  }
+}
+html body main .sponsorsMain {
+  /* MOBILE */
+}
+@media (max-width: 768px) {
+  html body main .sponsorsMain {
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+  html body main .sponsorsMain .row {
+    width: 95%;
+    gap: 1.5rem 2rem;
+  }
+  html body main .sponsorsMain img {
+    height: clamp(55px, 7vh, 95px);
+    max-width: 38vw;
+  }
+  html body main .sponsorsMain #ugent {
+    height: clamp(75px, 11vh, 130px);
+  }
+}
+html body main .sponsorsMain {
+  /* SMALL MOBILE */
+}
+@media (max-width: 480px) {
+  html body main .sponsorsMain .row {
+    gap: 1.2rem;
+  }
+  html body main .sponsorsMain img {
+    height: 50px;
+    max-width: 40vw;
+  }
+  html body main .sponsorsMain #ugent {
+    height: 70px;
+  }
+  html body main .sponsorsMain #bf {
+    height: 60px;
+  }
+  html body main .sponsorsMain #amonis,
+  html body main .sponsorsMain #vdkb {
+    height: 58px;
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html body main {
+  /* ANIMATION */
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html body main .logoContainer {
+  width: 100%;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+@media (max-width: 900px) {
+  html body main .logoContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  html body main .logoContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 901px) {
+  html body main .logoContainer a:nth-last-child(1):nth-child(odd) {
+    grid-column: 2;
+  }
+}
+html body main .logoItem {
+  width: 100%;
+  max-width: 240px;
+  box-sizing: border-box;
+  aspect-ratio: 16/10;
+  min-height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(30, 49, 66, 0.1);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+html body main .logoItem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.25s ease;
+}
+html body main .logoItem:hover {
+  transform: translateY(-5px);
+  background: rgba(244, 210, 74, 0.12);
+  box-shadow: 0 18px 40px rgba(30, 49, 66, 0.14);
+}
+html body main .logoItem:hover img {
+  transform: scale(1.06);
+}
+@media (max-width: 900px) {
+  html body main .logoItem {
+    max-width: 220px;
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  html body main .logoItem {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    min-height: 100px;
+    padding: 0.8rem;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .logoContainer {
+    display: none !important;
+  }
+}
+@media (max-width: 1200px) {
+  .logo-section {
+    display: none !important;
+  }
+  .logoContainer {
+    display: grid !important;
+  }
+  body .carouselWrapper {
+    height: auto;
+  }
+  body .carousel-track {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    padding-top: 80px !important;
+  }
+}/*# sourceMappingURL=indexStyle.css.map */

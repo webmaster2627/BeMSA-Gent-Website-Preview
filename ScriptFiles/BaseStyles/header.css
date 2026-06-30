@@ -1,0 +1,476 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+html body main {
+  padding-top: 180px;
+}
+html body header {
+  position: fixed;
+  width: 100vw;
+  height: 180px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+html body header .topBar {
+  width: 100vw;
+  height: auto;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+html body header .topBar a {
+  text-decoration: none;
+  color: #1E3142;
+  transition: ease 0.3s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 25px;
+  position: relative;
+}
+html body header .topBar a:hover {
+  color: #3FA3A8;
+}
+html body header .bottomBar {
+  width: 100vw;
+  height: 18vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body header .leftMenu {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body header .leftMenu .headerLogoLink {
+  width: 30%;
+  height: 100%;
+}
+html body header .leftMenu .headerLogoLink img {
+  width: auto;
+  height: 7rem;
+}
+html body header .rightMenu {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+html body header .rightMenu a {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #1E3142;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px;
+  display: inline-block;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+html body header .rightMenu a:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+html body header .rightMenu .dropdown {
+  position: relative;
+}
+html body header .rightMenu .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: 0.2s ease;
+  z-index: 20;
+}
+html body header .rightMenu .dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+html body header .rightMenu .submenu a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #1E3142;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+html body header .rightMenu .submenu a::before {
+  content: "↳";
+  display: inline-block;
+  font-size: 12px;
+  color: #3FA3A8;
+}
+html body header .rightMenu .submenu a:hover {
+  background: #F4D24A;
+  color: #1E3142;
+}
+html body header .rightMenu .lang-dropdown {
+  position: relative;
+}
+html body header .rightMenu .lang-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  min-width: 120px;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: 0.2s ease;
+  z-index: 30;
+}
+html body header .rightMenu .lang-menu a {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+html body header .rightMenu .lang-menu a::before {
+  content: "↳";
+  display: inline-block;
+  font-size: 12px;
+  color: #3FA3A8;
+}
+html body header .rightMenu .lang-menu a:hover {
+  background: #F4D24A;
+}
+html body header .rightMenu .lang-menu img {
+  width: 24px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+html body header .rightMenu .lang-dropdown:hover .lang-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+html body header .rightMenu .lang-icon {
+  width: 26px;
+  height: auto;
+}
+html body header .rightMenu .dropdown-parent > a {
+  position: relative;
+  padding-right: 18px;
+}
+html body header .rightMenu .dropdown-parent > a::after {
+  content: "▾";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%) scale(1.2);
+  font-size: 15px;
+  color: #1E3142;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+html body header .rightMenu .dropdown-parent:hover > a::after {
+  transform: translateY(-50%) rotate(180deg);
+  transform-origin: center;
+}
+html body header .rightMenu .side-dropdown {
+  position: relative;
+}
+html body header .rightMenu .side-submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(8px);
+  transition: 0.2s ease;
+  z-index: 30;
+}
+html body header .rightMenu .side-dropdown:hover .side-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+html body header .rightMenu .scmenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 8px;
+  padding: 10px;
+  min-width: 600px;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: 0.2s ease;
+  z-index: 20;
+}
+html body header .rightMenu .scmenu a .sclogo {
+  height: 30px;
+  width: auto;
+}
+html body header .rightMenu .scmenu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+html body header .rightMenu .scmenu a .sc-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+html body header .rightMenu .scmenu a .sc-short {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1E3142;
+}
+html body header .rightMenu .scmenu a .sc-long {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7c8c;
+  white-space: normal;
+}
+html body header .rightMenu .dropdown:hover .scmenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+html body header .rightMenu .scmenu a::before {
+  content: "↳";
+  display: inline-block;
+  font-size: 12px;
+  color: #3FA3A8;
+}
+html body header .rightMenu .scmenu a:hover {
+  background: #F4D24A;
+  color: #1E3142;
+}
+html body .burgerContainer, html body .burger, html body #backdrop, html body #mobileMenu {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  html body main {
+    padding-top: 60px;
+  }
+  html body .burgerContainer {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  html body .burgerContainer a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #1E3142;
+  }
+  html body .burgerContainer {
+    background: white;
+    z-index: 100;
+  }
+  html body .burger, html body #backdrop, html body #mobileMenu {
+    display: block;
+  }
+  html body .burger {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px;
+    color: #1E3142;
+  }
+  html body {
+    /* Backdrop */
+  }
+  html body .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  html body .backdrop.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  html body {
+    /* Menu container */
+  }
+  html body .overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background: #FFFFFF;
+    color: #1E3142;
+    transition: 0.3s;
+    overflow-y: auto;
+    padding-top: 60px;
+    z-index: 2;
+  }
+  html body .overlay.active {
+    left: 0;
+  }
+  html body {
+    /* Close button */
+  }
+  html body .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  html body {
+    /* Menu */
+  }
+  html body .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  html body .menu a {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    padding: 15px;
+    color: #1E3142;
+    text-decoration: none;
+  }
+  html body .menu a img {
+    height: 90px;
+    width: auto;
+  }
+  html body .menu a:hover {
+    background: #FFFFFF;
+  }
+  html body {
+    /* Submenu */
+  }
+  html body .submenumobile {
+    max-height: 0;
+    overflow: hidden;
+    background: #FFFFFF;
+    transition: max-height 0.3s ease;
+  }
+  html body .submenumobile a {
+    padding-left: 30px;
+    font-family: "Raleway", sans-serif;
+  }
+  html body .submenumobile a:hover {
+    cursor: pointer;
+  }
+  html body {
+    /* Open submenu */
+  }
+  html body .menu li.open .submenumobile {
+    max-height: 800px;
+  }
+  html body {
+    /* Arrow */
+  }
+  html body .arrow {
+    float: right;
+    transition: transform 0.3s;
+  }
+  html body .menu li.open .arrow {
+    transform: rotate(90deg);
+  }
+  html body .submenumobile li a, html body .menu li a {
+    font-weight: bold;
+  }
+  html body .submenumobile li a .languageFlag, html body .menu li a .languageFlag {
+    height: 10px;
+    width: auto;
+  }
+  html body .submenumobile li a .subMenuSCLogo, html body .menu li a .subMenuSCLogo {
+    height: 15px;
+    width: auto;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  html body .submenumobile li a .subTitle, html body .menu li a .subTitle {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  html body .submenumobile li a:hover, html body .menu li a:hover {
+    cursor: pointer;
+  }
+  html body .submenumobile ul, html body .menu ul {
+    list-style: none;
+  }
+  html body .submenumobile a::before {
+    content: "↳";
+    display: inline-block;
+    font-size: 12px;
+    color: #3FA3A8;
+    position: relative;
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+  }
+  html body header {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

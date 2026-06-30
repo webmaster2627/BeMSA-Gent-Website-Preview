@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body #scora button {
+  background: #bf222d;
+}
+body #scome button {
+  background: #000000;
+}
+body #scorp button {
+  background: #549232;
+}
+body #scoph button {
+  background: #ef6830;
+}
+body #scope button {
+  background: #387fc7;
+}
+body #scogs button {
+  background: #8e0a83;
+}
+body #score button {
+  background: #3244a1;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: white;
+}
+body main {
+  width: min(1100px, 92%);
+  margin: 3rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2.5rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+body main h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #1E3142;
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.2;
+}
+body main h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #3FA3A8;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  line-height: 1.3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+body main h2 img {
+  height: clamp(20px, 2.5vw, 33px);
+  width: auto;
+  flex-shrink: 0;
+}
+body main p {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.7;
+  color: #1E3142;
+  margin-bottom: 1rem;
+}
+body main ul,
+body main ol {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.7;
+  color: #1E3142;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+body main ul li,
+body main ol li {
+  margin-bottom: 0.6rem;
+}
+body main .activeLink {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  transition: color 0.25s ease;
+}
+body main .activeLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background: #F4D24A;
+  transition: width 0.25s ease;
+}
+body main .activeLink:hover {
+  color: #3FA3A8;
+  cursor: pointer;
+}
+body main .activeLink:hover::after {
+  width: 100%;
+}
+body main .container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+body main .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+}
+body main .subTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main .subTitle img {
+  height: 2.5rem;
+  width: auto;
+}
+body main .subTitle h2 {
+  font-size: 2rem;
+  color: #1E3142;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+body main .subTitle a {
+  font-size: 1.5rem;
+  color: #3FA3A8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  padding-left: 0.3rem;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+body main .subTitle a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 3px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+body main .subTitle a:hover {
+  cursor: pointer;
+  color: #3FA3A8;
+}
+body main .subTitle a:hover::after {
+  width: 100%;
+}
+body main .historyPage {
+  width: min(1400px, 94%);
+  margin: 3rem auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 4rem;
+}
+body main .yearCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 32px;
+}
+body main .yearHeader {
+  border-bottom: 3px solid rgba(63, 163, 168, 0.15);
+  padding-bottom: 1rem;
+}
+body main .yearHeader h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #3FA3A8;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+}
+body main {
+  /* =========================
+     HISTORY PAGE (UPDATED)
+     YEAR CARD LAYOUT
+  ========================= */
+}
+body main .historyPage {
+  width: min(1450px, 94%);
+  margin: 3rem auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 4rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+body main {
+  /* YEAR CARD */
+}
+body main .yearCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 32px;
+}
+body main {
+  /* YEAR HEADER */
+}
+body main .yearHeader {
+  border-bottom: 3px solid rgba(63, 163, 168, 0.15);
+  padding-bottom: 1rem;
+}
+body main .yearHeader h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #3FA3A8;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+}
+body main {
+  /* CONTENT LAYOUT */
+}
+body main .yearContent {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+body main {
+  /* TEXT SECTION */
+}
+body main .textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+body main .textSection p {
+  font-family: "Raleway", sans-serif;
+  color: rgba(30, 49, 66, 0.82);
+  line-height: 1.85;
+  margin: 0;
+}
+body main .textSection ul,
+body main .textSection ol {
+  padding-left: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #1E3142;
+  line-height: 1.8;
+}
+body main .textSection ul li,
+body main .textSection ol li {
+  margin-bottom: 0.5rem;
+}
+body main .textSection h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #1E3142;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+body main {
+  /* MEDIA SECTION */
+}
+body main .mediaSection {
+  display: grid;
+  gap: 1.8rem;
+}
+body main {
+  /* MEDIA ITEM WRAPPER */
+}
+body main .mediaItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+body main {
+  /* MEDIA (IMG + VIDEO) */
+}
+body main .mediaItem video,
+body main .timelineMedia {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: black;
+}
+body main .mediaItem img {
+  display: block;
+  border-radius: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main {
+  /* CAPTION */
+}
+body main .mediaCaption {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  color: rgba(30, 49, 66, 0.65);
+  line-height: 1.4;
+  padding-left: 0.2rem;
+  transition: color 0.25s ease;
+}
+body main {
+  /* ANIMATION */
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body main {
+  /* TABLET */
+}
+@media (max-width: 1024px) {
+  body main .yearContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+body main {
+  /* MOBILE */
+}
+@media (max-width: 768px) {
+  body main .yearCard {
+    padding: 1rem;
+  }
+  body main .yearHeader h2 {
+    font-size: 2.4rem;
+  }
+  body main .textSection p,
+  body main .textSection li {
+    font-size: 0.98rem;
+  }
+}
+body main {
+  /* SMALL MOBILE */
+}
+@media (max-width: 480px) {
+  body main .yearHeader h2 {
+    font-size: 2rem;
+  }
+  body main .mediaSection {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  body main p, body main ul, body main ol, body main a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  body main h1 {
+    font-size: 2rem;
+  }
+  body main h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  body main h1 {
+    font-size: 1.75rem;
+  }
+  body main p, body main ul, body main ol, body main a {
+    font-size: 0.95rem;
+  }
+  body main h2 {
+    font-size: 1.2rem;
+  }
+}
+body {
+  /* HISTORY PAGE */
+}
+body .historyPage {
+  width: min(1450px, 94%);
+  margin: 3rem auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 5rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+body {
+  /* HERO */
+}
+body .historyHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 900px;
+}
+body .historyHero .historyTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+body .historyHero .historyTitle h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #1E3142;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+body .historyHero .historyTitle img {
+  height: clamp(3rem, 6vw, 6rem);
+  width: auto;
+}
+body .historyHero p {
+  font-family: "Raleway", sans-serif;
+  color: rgba(30, 49, 66, 0.78);
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.8;
+}
+body {
+  /* YEAR SECTION */
+}
+body .historyYear {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+body {
+  /* YEAR */
+}
+body .yearLabel {
+  position: sticky;
+  top: 120px;
+}
+body .yearLabel h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 900;
+  color: #3FA3A8;
+  line-height: 1;
+}
+body {
+  /* CARDS */
+}
+body .historyCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+body {
+  /* CARD */
+}
+body .historyCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: min(520px, 100%);
+  transition: transform 0.3s ease;
+}
+body .historyCard:hover {
+  transform: translateY(-5px);
+}
+body {
+  /* MEDIA */
+}
+body .mediaBox {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .mediaBox img,
+body .mediaBox iframe {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: none;
+  border-radius: 24px;
+}
+body .buttonBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+body .buttonBlock button {
+  border: none;
+  outline: none;
+  padding: 1rem 1.6rem;
+  border-radius: 18px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  background: #1E3142;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 25px rgba(30, 49, 66, 0.12);
+  white-space: nowrap;
+}
+body .buttonBlock button:hover {
+  background: #3FA3A8;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(63, 163, 168, 0.22);
+}
+body {
+  /* MOBILE FIX */
+}
+@media (max-width: 768px) {
+  body .buttonBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+  body .buttonBlock button {
+    width: 100%;
+    text-align: center;
+  }
+}
+body {
+  /* CONTENT */
+}
+body .contentBox {
+  width: 100%;
+  padding: 1.2rem 0.2rem 0 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+body .contentBox h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #1E3142;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+body .contentBox p {
+  font-family: "Raleway", sans-serif;
+  color: rgba(30, 49, 66, 0.78);
+  line-height: 1.75;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+body .contentBox a {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #1E3142;
+  transition: color 0.25s ease;
+}
+body .contentBox a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 3px;
+  background: #F4D24A;
+  transition: width 0.25s ease;
+}
+body .contentBox a:hover {
+  color: #3FA3A8;
+  cursor: pointer;
+}
+body .contentBox a:hover::after {
+  width: 100%;
+}
+body {
+  /* TABLET */
+}
+@media (max-width: 1024px) {
+  body .historyYear {
+    grid-template-columns: 120px 1fr;
+    gap: 2rem;
+  }
+  body .historyCards {
+    gap: 2rem;
+  }
+  body .historyCard {
+    max-width: 100%;
+  }
+}
+body {
+  /* MOBILE */
+}
+@media (max-width: 768px) {
+  body .historyPage {
+    gap: 4rem;
+  }
+  body .historyYear {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  body .yearLabel {
+    position: relative;
+    top: unset;
+  }
+  body .yearLabel h2 {
+    font-size: 2rem;
+  }
+  body .historyCards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  body .historyCard {
+    width: 100%;
+  }
+  body .mediaBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+  body .mediaBox video,
+  body .mediaBox img,
+  body .mediaBox iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 24px;
+  }
+  body .contentBox {
+    padding-top: 1rem;
+  }
+}
+body {
+  /* SMALL MOBILE */
+}
+@media (max-width: 480px) {
+  body .historyHero .historyTitle {
+    gap: 0.6rem;
+  }
+  body .historyHero .historyTitle h1 {
+    font-size: 2rem;
+  }
+  body .historyHero .historyTitle img {
+    height: 2.5rem;
+  }
+  body .contentBox h3 {
+    font-size: 1.15rem;
+  }
+  body .contentBox p {
+    font-size: 0.95rem;
+  }
+}
+body {
+  /* ANIMATION */
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=history.css.map */

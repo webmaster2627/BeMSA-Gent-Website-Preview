@@ -1,0 +1,239 @@
+@mixin displayFlex($dir, $just, $align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+$primaryFont : 'Montserrat', sans-serif;
+$secondayFont :'Raleway', sans-serif;
+
+$goldYellow : #F4D24A;
+$lightblue : #A1CCC5;
+$turquoise : #3FA3A8;
+$darkblue : #1E3142;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 180px;
+
+    body{
+        min-height: 100vh;
+        width: 100%;
+        background: white;
+
+        @include displayFlex(column, flex-start, center);
+
+        main{
+            width: min(1400px, 92%);
+            padding: 4rem 0;
+
+            @include displayFlex(column, flex-start, center);
+            gap: 4rem;
+
+            .sponsor{
+                width: 100%;
+
+                @include displayFlex(row, space-between, center);
+
+                gap: 3rem;
+
+                padding: 2rem;
+
+                border-radius: 24px;
+
+                background: white;
+
+                box-shadow:
+                    0 10px 30px rgba(0,0,0,0.06);
+
+                transition: transform 0.3s ease;
+
+                &:hover{
+                    transform: translateY(-4px);
+                }
+
+                &.reverse{
+                    flex-direction: row-reverse;
+                }
+
+                .imageBox{
+                    flex: 1;
+
+                    @include displayFlex(row, center, center);
+
+                    a{
+                        width: 100%;
+
+                        @include displayFlex(row, center, center);
+
+                        img{
+                            width: 100%;
+                            max-width: 320px;
+                            height: auto;
+
+                            object-fit: contain;
+
+                            transition: transform 0.4s ease;
+                        }
+
+                        img:hover{
+                            transform: scale(1.05);
+                        }
+
+                        #vkdbLogo{
+                            max-width: 180px;
+                        }
+                    }
+                }
+
+                .textBox{
+                    flex: 2;
+
+                    @include displayFlex(column, center, flex-start);
+
+                    gap: 1rem;
+
+                    a{
+                        font-family: $primaryFont;
+                        font-size: 2rem;
+                        font-weight: 800;
+
+                        color: $turquoise;
+
+                        text-decoration: none;
+
+                        position: relative;
+
+                        transition: color 0.25s ease;
+
+                        &::after{
+                            content: "";
+
+                            position: absolute;
+
+                            left: 0;
+                            bottom: -0.3rem;
+
+                            width: 0;
+                            height: 4px;
+
+                            background-color: $goldYellow;
+
+                            transition: width 0.3s ease;
+                        }
+
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
+
+                    p{
+                        font-family: $secondayFont;
+
+                        font-size: 1.05rem;
+
+                        line-height: 1.8;
+
+                        color: rgba(30,49,66,0.9);
+                    }
+                }
+            }
+
+            /* TABLET */
+            @media (max-width: 992px){
+
+                .sponsor{
+                    gap: 2rem;
+
+                    .textBox{
+
+                        a{
+                            font-size: 1.7rem;
+                        }
+
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            /* MOBILE */
+            @media (max-width: 768px){
+
+                .sponsor,
+                .sponsor.reverse{
+
+                    flex-direction: column;
+
+                    text-align: center;
+
+                    padding: 2rem 1.5rem;
+                }
+
+                .sponsor{
+
+                    .imageBox{
+                        width: 100%;
+
+                        a{
+
+                            img{
+                                max-width: 240px;
+                            }
+
+                            #vkdbLogo{
+                                max-width: 140px;
+                            }
+                        }
+                    }
+
+                    .textBox{
+                        width: 100%;
+
+                        align-items: center;
+
+                        a{
+                            font-size: 1.5rem;
+                        }
+
+                        p{
+                            font-size: 0.95rem;
+                            line-height: 1.7;
+                        }
+                    }
+                }
+            }
+
+            /* SMALL MOBILE */
+            @media (max-width: 480px){
+
+                .sponsor{
+                    padding: 1.5rem 1rem;
+
+                    .textBox{
+
+                        a{
+                            font-size: 1.3rem;
+                        }
+
+                        p{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

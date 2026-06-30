@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  overflow-x: hidden;
+}
+
+.committeesPage {
+  width: min(1100px, 92%);
+  margin: 3rem auto 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2.5rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+.committeesPage h1 {
+  font-size: 3rem;
+  color: #1E3142;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.committeesPage p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: rgba(30, 49, 66, 0.8);
+  max-width: 850px;
+}
+.committeesPage p a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s ease;
+  font-size: 1rem;
+}
+.committeesPage p a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+.committeesPage p a:hover {
+  cursor: pointer;
+  color: #3FA3A8;
+}
+.committeesPage p a:hover::after {
+  width: 100%;
+}
+.committeesPage .skipTo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.committeesPage {
+  /* each logo + link behaves as one unit */
+}
+.committeesPage .skipItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4rem;
+}
+.committeesPage .skipItem img {
+  height: 1.5rem;
+  width: auto;
+}
+.committeesPage {
+  /* link styling */
+}
+.committeesPage .skipItem a {
+  font-size: 1.5rem;
+  color: #1E3142;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.committeesPage .skipItem a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 3px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+.committeesPage .skipItem a:hover {
+  cursor: pointer;
+}
+.committeesPage .skipItem a:hover::after {
+  width: 100%;
+}
+.committeesPage {
+  /* TABLET */
+}
+@media (max-width: 768px) {
+  .committeesPage .skipItem img {
+    height: 1.3rem;
+  }
+  .committeesPage .skipItem a {
+    font-size: 1.25rem;
+  }
+}
+.committeesPage {
+  /* MOBILE */
+}
+@media (max-width: 600px) {
+  .committeesPage .skipTo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .committeesPage .skipItem img {
+    height: 1.2rem;
+  }
+  .committeesPage .skipItem a {
+    font-size: 1.1rem;
+  }
+}
+.committeesPage {
+  /* SMALL MOBILE */
+}
+@media (max-width: 400px) {
+  .committeesPage .skipItem img {
+    height: 1rem;
+  }
+  .committeesPage .skipItem a {
+    font-size: 1rem;
+  }
+}
+.committeesPage .committeeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+}
+.committeesPage .committeeSection .subTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.committeesPage .committeeSection .subTitle img {
+  height: 2.5rem;
+  width: auto;
+}
+.committeesPage .committeeSection .subTitle h2 {
+  font-size: 2rem;
+  color: #1E3142;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.committeesPage .committeeSection .subTitle a {
+  font-size: 1.5rem;
+  color: #3FA3A8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  padding-left: 0.3rem;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.committeesPage .committeeSection .subTitle a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 3px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+.committeesPage .committeeSection .subTitle a:hover {
+  cursor: pointer;
+  color: #3FA3A8;
+}
+.committeesPage .committeeSection .subTitle a:hover::after {
+  width: 100%;
+}
+.committeesPage .committeeSection .tableWrapper {
+  width: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 30px rgba(30, 49, 66, 0.08);
+}
+.committeesPage .committeeSection table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.committeesPage .committeeSection table thead {
+  background: #1E3142;
+}
+.committeesPage .committeeSection table thead th {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.committeesPage .committeeSection table tbody tr {
+  transition: background 0.25s ease;
+}
+.committeesPage .committeeSection table tbody tr:nth-child(even) {
+  background: rgba(161, 204, 197, 0.12);
+}
+.committeesPage .committeeSection table tbody tr:hover {
+  background: rgba(244, 210, 74, 0.12);
+}
+.committeesPage .committeeSection table tbody tr td {
+  padding: 1rem 1.2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: rgba(30, 49, 66, 0.85);
+  border-bottom: 1px solid rgba(30, 49, 66, 0.08);
+}
+.committeesPage .committeeSection table tbody tr td a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(63, 163, 168, 0.12);
+  color: #3FA3A8;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.committeesPage .committeeSection table tbody tr td a svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2;
+}
+.committeesPage .committeeSection table tbody tr td a:hover {
+  background: #1E3142;
+  color: white;
+  transform: translateY(-2px);
+}
+@media (min-width: 601px) {
+  .committeesPage .committeeSection table {
+    table-layout: fixed;
+  }
+  .committeesPage .committeeSection table th:nth-child(1),
+  .committeesPage .committeeSection table td:nth-child(1) {
+    width: 120px;
+  }
+  .committeesPage .committeeSection table th:nth-child(3),
+  .committeesPage .committeeSection table td:nth-child(3) {
+    width: 100px;
+    text-align: center;
+  }
+}
+.committeesPage {
+  /* DESKTOP */
+}
+@media (min-width: 1440px) {
+  .committeesPage {
+    width: min(1200px, 85%);
+  }
+  .committeesPage html {
+    scroll-padding-top: 180px;
+  }
+}
+.committeesPage {
+  /* LAPTOP */
+}
+@media (max-width: 1024px) {
+  .committeesPage html {
+    scroll-padding-top: 60px;
+  }
+  .committeesPage {
+    width: min(900px, 92%);
+  }
+  .committeesPage h1 {
+    font-size: 2.7rem;
+  }
+  .committeesPage .committeeSection .subTitle h2 {
+    font-size: 1.8rem;
+  }
+  .committeesPage .committeeSection .subTitle a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 900px) {
+  .committeesPage html {
+    scroll-padding-top: 60px;
+  }
+}
+.committeesPage {
+  /* TABLET */
+}
+@media (max-width: 768px) {
+  .committeesPage html {
+    scroll-padding-top: 60px;
+  }
+  .committeesPage {
+    width: 94%;
+    gap: 2rem;
+  }
+  .committeesPage h1 {
+    font-size: 2.3rem;
+  }
+  .committeesPage .committeeSection .subTitle h2 {
+    font-size: 1.5rem;
+  }
+  .committeesPage .committeeSection .subTitle a {
+    font-size: 1.2rem;
+  }
+  .committeesPage .committeeSection table th,
+  .committeesPage .committeeSection table td {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+.committeesPage {
+  /* MOBILE */
+}
+@media (max-width: 600px) {
+  .committeesPage {
+    margin: 2rem auto 4rem auto;
+  }
+  .committeesPage h1 {
+    font-size: 2rem;
+  }
+  .committeesPage .committeeSection .subTitle h2 {
+    font-size: 1.2rem;
+  }
+  .committeesPage .committeeSection .subTitle a {
+    font-size: 1.2rem;
+  }
+  .committeesPage .committeeSection .tableWrapper {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .committeesPage .committeeSection table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+  }
+  .committeesPage .committeeSection table thead {
+    display: none;
+  }
+  .committeesPage .committeeSection table tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .committeesPage .committeeSection table tbody tr {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: white !important;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(30, 49, 66, 0.12);
+  }
+  .committeesPage .committeeSection table tbody tr td {
+    border: none;
+    padding: 1rem 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.95rem;
+    color: rgba(30, 49, 66, 0.9);
+    /* LABEL SIDE */
+  }
+  .committeesPage .committeeSection table tbody tr td::before {
+    font-weight: 700;
+    color: #1E3142;
+    font-family: "Montserrat", sans-serif;
+    min-width: 78px;
+    text-align: left;
+    flex-shrink: 0;
+  }
+  .committeesPage .committeeSection table tbody tr td:nth-child(1)::before {
+    content: "Year";
+  }
+  .committeesPage .committeeSection table tbody tr td:nth-child(2)::before {
+    content: "Name";
+  }
+  .committeesPage .committeeSection table tbody tr td:nth-child(3)::before {
+    content: "Album";
+  }
+  .committeesPage .committeeSection table tbody tr td a {
+    width: 40px;
+    height: 40px;
+    background: rgba(63, 163, 168, 0.12);
+    color: #3FA3A8;
+  }
+  .committeesPage .committeeSection table tbody tr td a:hover {
+    background: #1E3142;
+    color: white;
+  }
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=pvs.css.map */

@@ -1,0 +1,214 @@
+@mixin displayFlex($dir, $just, $align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+$primaryFont : 'Montserrat', sans-serif;
+$secondayFont :'Raleway', sans-serif;
+
+$goldYellow : #F4D24A;
+$lightblue : #A1CCC5;
+$turquoise : #3FA3A8;
+$darkblue : #1E3142;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    body{
+        min-height: 100vh;
+        width: 100%;
+        background: white;
+        overflow-x: hidden;
+
+        main{
+            width: min(1200px, 92%);
+            margin: 20px auto;
+
+            animation: fadeUp 1s ease forwards;
+
+            @include displayFlex(row, space-evenly, flex-start);
+            gap: 2rem;
+
+            .leftSide,
+            .rightSide{
+                flex: 1;
+            }
+
+            h1 {
+                font-size: 3rem;
+                color: $darkblue;
+                font-family: $primaryFont;
+                font-weight: 800;
+                line-height: 1.1;
+            }
+
+            .subTitle {
+                @include displayFlex(row, flex-start, center);
+                gap: 0.4rem;
+                flex-wrap: wrap;
+
+                img{
+                    height: 2rem;
+                    width: auto;
+                }
+
+                h2{
+                    font-size: 2rem;
+                    color: $turquoise;
+                    font-family: $secondayFont;
+                    font-weight: 600;
+                    padding: 0.5rem;
+                }
+            }
+
+            p,
+            ul {
+                font-family: $secondayFont;
+                font-size: 1rem;
+                line-height: 1.3;
+                color: rgba(30, 49, 66, 0.8);
+                max-width: 850px;
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: color 0.25s ease;
+                    font-size: 1rem;
+                    font-family: $secondayFont
+                }
+
+                a::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.2rem;
+                    width: 0;
+                    height: 2px;
+                    background-color: $goldYellow;
+                    transition: width 0.25s ease;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: $turquoise;
+                }
+
+                a:hover::after {
+                    width: 100%;
+                }
+            }
+
+            ul{
+                padding-left: 1.2rem;
+
+                li{
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            /* RIGHT SIDE (MAP + IMAGES) */
+            .rightSide {
+                @include displayFlex(column, flex-start, stretch);
+                gap: 1.5rem;
+
+                .imageBox,
+                .mapBox {
+                    width: 100%;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 30px rgba(30, 49, 66, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .imageBox img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    object-fit: cover;
+                }
+
+                .mapBox iframe {
+                    width: 100%;
+                    height: 250px;
+                    border: 0;
+                }
+
+                .addressBox {
+                    font-family: $secondayFont;
+                    font-size: 1rem;
+                    color: rgba(30, 49, 66, 0.8);
+                    text-align: center;
+                }
+
+                .imageBox:hover,
+                .mapBox:hover {
+                    transform: translateY(-4px);
+                }
+            }
+
+
+            /* RESPONSIVE */
+            @media (max-width: 900px){
+                /* optional fine tuning */
+            }
+
+            @media (max-width: 768px){
+                flex-direction: column;
+                gap: 1.5rem;
+
+                h1{
+                    line-height: 1.2;
+                }
+
+                p,
+                ul{
+                    font-size: 0.96rem;
+                }
+            }
+
+            @media (max-width: 480px){
+
+                h1{
+                    font-size: 2rem;
+                }
+
+                .subTitle{
+                    align-items: center;
+
+                    h2{
+                        font-size: 1rem;
+                    }
+
+                    img{
+                        height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px;
+}
+html body {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+html body main {
+  width: min(1400px, 92%);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+html body main .sponsor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+html body main .sponsor:hover {
+  transform: translateY(-4px);
+}
+html body main .sponsor.reverse {
+  flex-direction: row-reverse;
+}
+html body main .sponsor .imageBox {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body main .sponsor .imageBox a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body main .sponsor .imageBox a img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.4s ease;
+}
+html body main .sponsor .imageBox a img:hover {
+  transform: scale(1.05);
+}
+html body main .sponsor .imageBox a #vkdbLogo {
+  max-width: 180px;
+}
+html body main .sponsor .textBox {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+html body main .sponsor .textBox a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #3FA3A8;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.25s ease;
+}
+html body main .sponsor .textBox a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 0;
+  height: 4px;
+  background-color: #F4D24A;
+  transition: width 0.3s ease;
+}
+html body main .sponsor .textBox a:hover::after {
+  width: 100%;
+}
+html body main .sponsor .textBox p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(30, 49, 66, 0.9);
+}
+html body main {
+  /* TABLET */
+}
+@media (max-width: 992px) {
+  html body main .sponsor {
+    gap: 2rem;
+  }
+  html body main .sponsor .textBox a {
+    font-size: 1.7rem;
+  }
+  html body main .sponsor .textBox p {
+    font-size: 1rem;
+  }
+}
+html body main {
+  /* MOBILE */
+}
+@media (max-width: 768px) {
+  html body main .sponsor,
+  html body main .sponsor.reverse {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+  html body main .sponsor .imageBox {
+    width: 100%;
+  }
+  html body main .sponsor .imageBox a img {
+    max-width: 240px;
+  }
+  html body main .sponsor .imageBox a #vkdbLogo {
+    max-width: 140px;
+  }
+  html body main .sponsor .textBox {
+    width: 100%;
+    align-items: center;
+  }
+  html body main .sponsor .textBox a {
+    font-size: 1.5rem;
+  }
+  html body main .sponsor .textBox p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+html body main {
+  /* SMALL MOBILE */
+}
+@media (max-width: 480px) {
+  html body main .sponsor {
+    padding: 1.5rem 1rem;
+  }
+  html body main .sponsor .textBox a {
+    font-size: 1.3rem;
+  }
+  html body main .sponsor .textBox p {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=partners.css.map */

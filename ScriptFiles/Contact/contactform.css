@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.formContainer {
+  width: 100vw;
+  gap: 4rem;
+  padding-top: 190px;
+  animation: fadeUp 1s ease forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.formContainer .formIntro {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.formContainer .formIntro .introTitle {
+  font-size: 3rem;
+  color: #1E3142;
+  min-width: 35vw;
+}
+.formContainer .formIntro .introSubTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.formContainer .formIntro .introSubTitle img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 0.2rem;
+}
+.formContainer .formIntro .introSubTitle h2 {
+  font-size: 1.5rem;
+  min-width: 35vw;
+  color: #3FA3A8;
+  font-family: "Raleway", sans-serif;
+}
+.formContainer .formIntro .introText {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(30, 49, 66, 0.8);
+}
+.formContainer .formIntro .introText a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s ease;
+  font-size: 1rem;
+}
+.formContainer .formIntro .introText a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+.formContainer .formIntro .introText a:hover {
+  cursor: pointer;
+  color: #3FA3A8;
+}
+.formContainer .formIntro .introText a:hover::after {
+  width: 100%;
+}
+.formContainer .formIntro .committeeTable {
+  min-width: 35vw;
+  width: 100%;
+  border-collapse: collapse;
+}
+.formContainer .formIntro .committeeTable tr {
+  border-bottom: 1px solid rgba(30, 49, 66, 0.1);
+  transition: background 0.25s ease;
+}
+.formContainer .formIntro .committeeTable tr:hover {
+  background: rgba(161, 204, 197, 0.08);
+}
+.formContainer .formIntro .committeeTable td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+.formContainer .formIntro .committeeTable td:first-child {
+  width: 80px;
+}
+.formContainer .formIntro .committeeTable img {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+}
+.formContainer .formIntro .committeeTable p {
+  font-family: "Raleway", sans-serif;
+  color: #1E3142;
+  line-height: 1.5;
+}
+.formContainer .formIntro .committeeTable a {
+  position: relative;
+  text-decoration: none;
+  color: #1E3142;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+.formContainer .formIntro .committeeTable a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+.formContainer .formIntro .committeeTable a:hover {
+  color: #3FA3A8;
+}
+.formContainer .formIntro .committeeTable a:hover::after {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .formContainer .formIntro .committeeTable,
+  .formContainer .formIntro .committeeTable tbody,
+  .formContainer .formIntro .committeeTable tr,
+  .formContainer .formIntro .committeeTable td {
+    display: block;
+    width: 100%;
+  }
+  .formContainer .formIntro .committeeTable tr {
+    padding: 1rem 0;
+  }
+  .formContainer .formIntro .committeeTable td {
+    padding: 0.5rem 0;
+  }
+  .formContainer .formIntro .committeeTable td:first-child {
+    width: 100%;
+  }
+  .formContainer .formIntro .committeeTable img {
+    margin-bottom: 0.5rem;
+  }
+}
+.formContainer .fs-form {
+  flex: 1;
+  max-width: 650px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .formContainer {
+    padding-top: 60px !important;
+  }
+}
+.fs-form {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(63, 163, 168, 0.15);
+  border-radius: 28px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(30, 49, 66, 0.08), 0 2px 12px rgba(63, 163, 168, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.8rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Decorative gradient border */
+.fs-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 28px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.fs-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.7rem;
+  position: relative;
+}
+
+.fs-label {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1E3142;
+  letter-spacing: 0.5px;
+  transform: translateX(0);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fs-field:focus-within .fs-label {
+  transform: translateX(6px);
+  color: #3FA3A8;
+}
+
+.fs-input,
+.fs-textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  border: 2px solid #3FA3A8;
+  padding: 1rem 1.2rem;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #1E3142;
+  transition: border 0.3s ease, background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fs-input::-moz-placeholder, .fs-textarea::-moz-placeholder {
+  color: rgba(30, 49, 66, 0.5);
+}
+
+.fs-input::placeholder,
+.fs-textarea::placeholder {
+  color: rgba(30, 49, 66, 0.5);
+}
+
+.fs-input:hover,
+.fs-textarea:hover {
+  transform: translateY(-2px);
+  background: rgba(161, 204, 197, 0.12);
+}
+
+.fs-input:focus,
+.fs-textarea:focus {
+  border-color: #3FA3A8;
+  background: white;
+  box-shadow: 0 0 0 5px rgba(63, 163, 168, 0.12), 0 8px 24px rgba(63, 163, 168, 0.15);
+  transform: translateY(-2px);
+}
+
+.fs-textarea {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.fs-description {
+  font-size: 0.85rem;
+  font-family: "Raleway", sans-serif;
+  color: rgba(30, 49, 66, 0.65);
+  margin-left: 0.2rem;
+}
+
+.fs-button-group {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fs-button {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 2.8rem;
+  border-radius: 999px;
+  background: #3FA3A8;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 24px rgba(63, 163, 168, 0.25);
+}
+
+.fs-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.6s ease;
+}
+
+.fs-button:hover::before {
+  left: 120%;
+}
+
+.fs-button:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.fs-button:active {
+  transform: scale(0.97);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes floatBlob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -30px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .formContainer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+  .formContainer .formIntro {
+    max-width: 100%;
+  }
+  .formContainer .fs-form {
+    max-width: 100%;
+  }
+  .fs-form {
+    padding: 2rem;
+    border-radius: 22px;
+  }
+  .fs-button-group {
+    justify-content: center;
+  }
+  .fs-button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=contactform.css.map */

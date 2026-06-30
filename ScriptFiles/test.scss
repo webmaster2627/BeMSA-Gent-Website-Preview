@@ -1,0 +1,410 @@
+@mixin displayFlex($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Raleway', sans-serif;
+
+
+
+$darkblue: #1E3142;
+$turquoise: #3FA3A8;
+$lightblue: #A1CCC5;
+$goldYellow: #F4D24A;
+
+
+$scoreColor: #3244a1;
+$scopeColor: #387fc7;
+$scoraColor: #bf222d;
+$scorpColor: #549232;
+$scogsColor: #8e0a83;
+$scophColor: #ef6830;
+$scomeColor: #000000;
+
+
+$tablet: 1024px;
+$mobile: 768px;
+$small-mobile: 480px;
+
+html{
+	main{
+		.leerpadPage{
+    width: min(1200px, 92%);
+    margin: 3rem auto;
+
+    @include displayFlex(column, flex-start, stretch);
+    gap: 3rem;
+}
+
+/* HERO */
+.leerpadHero{
+    background: linear-gradient(
+        135deg,
+        rgba(63,163,168,0.08),
+        rgba(161,204,197,0.08)
+    );
+
+    border-radius: 32px;
+
+    padding: 2.5rem;
+
+    @include displayFlex(row, space-between, center);
+
+    gap: 2rem;
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,0.06);
+
+    .heroText{
+
+        h1{
+            font-family: $primaryFont;
+            font-size: clamp(2.2rem, 4vw, 4rem);
+            color: $darkblue;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            max-width: 650px;
+
+            font-family: $secondaryFont;
+
+            color: rgba(30,49,66,0.8);
+
+            line-height: 1.8;
+
+            font-size: 1.05rem;
+        }
+    }
+
+    .heroProgress{
+        @include displayFlex(column, center, center);
+
+        gap: 1rem;
+
+        flex-shrink: 0;
+
+        .progressCircle{
+            width: 140px;
+            height: 140px;
+
+            border-radius: 50%;
+
+            background: conic-gradient(
+                $turquoise 42%,
+                rgba(63,163,168,0.12) 0
+            );
+
+            position: relative;
+
+            @include displayFlex(row, center, center);
+
+            &::before{
+                content: "";
+
+                position: absolute;
+
+                width: 108px;
+                height: 108px;
+
+                border-radius: 50%;
+
+                background: white;
+            }
+
+            span{
+                position: relative;
+
+                z-index: 2;
+
+                font-family: $primaryFont;
+
+                font-size: 1.6rem;
+
+                font-weight: 800;
+
+                color: $darkblue;
+            }
+        }
+
+        p{
+            font-family: $secondaryFont;
+
+            color: rgba(30,49,66,0.7);
+
+            text-align: center;
+        }
+    }
+}
+
+/* TIMELINE */
+.leerpadTimeline{
+    @include displayFlex(column, flex-start, stretch);
+
+    gap: 2rem;
+}
+
+/* CARD */
+.topicCard{
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 2rem;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    @include displayFlex(column, flex-start, stretch);
+
+    gap: 2rem;
+
+    &:hover{
+        transform: translateY(-4px);
+
+        box-shadow:
+            0 18px 40px rgba(0,0,0,0.1);
+    }
+}
+
+/* TOP */
+.topicTop{
+    @include displayFlex(row, flex-start, center);
+
+    gap: 1.5rem;
+}
+
+.topicNumber{
+    width: 75px;
+    height: 75px;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        $turquoise,
+        $lightblue
+    );
+
+    color: white;
+
+    font-family: $primaryFont;
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+    flex-shrink: 0;
+
+    @include displayFlex(row, center, center);
+}
+
+.topicHeading{
+
+    h2{
+        font-family: $primaryFont;
+
+        font-size: clamp(1.5rem, 2vw, 2rem);
+
+        color: $darkblue;
+
+        font-weight: 800;
+
+        line-height: 1.2;
+    }
+
+    span{
+        font-family: $secondaryFont;
+
+        color: rgba(30,49,66,0.65);
+
+        font-size: 1rem;
+    }
+}
+
+/* BODY */
+.topicBody{
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    gap: 2rem;
+
+    align-items: start;
+}
+
+/* THEORY */
+.topicTheory{
+    @include displayFlex(column, flex-start, flex-start);
+
+    gap: 1.5rem;
+
+    p{
+        font-family: $secondaryFont;
+
+        color: rgba(30,49,66,0.82);
+
+        line-height: 1.8;
+
+        margin: 0;
+    }
+}
+
+/* IMAGE */
+.topicImage{
+    width: 100%;
+
+    img{
+        width: 100%;
+
+        max-width: 700px;
+
+        height: auto;
+
+        display: block;
+
+        border-radius: 22px;
+
+        box-shadow:
+            0 10px 30px rgba(0,0,0,0.08);
+    }
+}
+
+/* BUTTONS */
+.topicButtons{
+    @include displayFlex(column, flex-start, stretch);
+
+    gap: 1rem;
+
+    min-width: 220px;
+
+    a{
+        background: rgba(63,163,168,0.08);
+
+        padding: 1rem 1.2rem;
+
+        border-radius: 18px;
+
+        text-decoration: none;
+
+        font-family: $primaryFont;
+
+        font-weight: 700;
+
+        color: $darkblue;
+
+        transition:
+            transform 0.25s ease,
+            background 0.25s ease,
+            color 0.25s ease;
+
+        &:hover{
+            background: $turquoise;
+
+            color: white;
+
+            transform: translateY(-2px);
+        }
+    }
+}
+
+/* TABLET */
+@media (max-width: $tablet){
+
+    .topicBody{
+        grid-template-columns: 1fr;
+    }
+
+    .topicButtons{
+        width: 100%;
+
+        min-width: unset;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+}
+
+/* MOBILE */
+@media (max-width: $mobile){
+
+    .leerpadHero{
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 2rem;
+    }
+
+    .heroProgress{
+        width: 100%;
+    }
+
+    .topicCard{
+        padding: 1.5rem;
+    }
+
+    .topicTop{
+        align-items: flex-start;
+    }
+
+    .topicNumber{
+        width: 60px;
+        height: 60px;
+
+        font-size: 1.2rem;
+    }
+
+    .topicButtons{
+        flex-direction: column;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: $small-mobile){
+
+    .leerpadHero{
+        padding: 1.5rem;
+    }
+
+    .topicCard{
+        padding: 1rem;
+
+        border-radius: 22px;
+    }
+
+    .topicTop{
+        flex-direction: column;
+    }
+
+    .topicHeading{
+
+        h2{
+            font-size: 1.3rem;
+        }
+    }
+
+    .topicButtons{
+
+        a{
+            font-size: 0.92rem;
+        }
+    }
+}
+	}
+}

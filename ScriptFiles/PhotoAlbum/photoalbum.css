@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: white;
+}
+body main {
+  width: min(1100px, 92%);
+  margin: 3rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2.5rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+body main h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #1E3142;
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.2;
+}
+body main h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #3FA3A8;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  line-height: 1.3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+body main h2 img {
+  height: clamp(20px, 2.5vw, 33px);
+  width: auto;
+  flex-shrink: 0;
+}
+body main p {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.7;
+  color: #1E3142;
+  margin-bottom: 1rem;
+}
+body main ul,
+body main ol {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.7;
+  color: #1E3142;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+body main ul li,
+body main ol li {
+  margin-bottom: 0.6rem;
+}
+body main .activeLink {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  transition: color 0.25s ease;
+}
+body main .activeLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background: #F4D24A;
+  transition: width 0.25s ease;
+}
+body main .activeLink:hover {
+  color: #3FA3A8;
+  cursor: pointer;
+}
+body main .activeLink:hover::after {
+  width: 100%;
+}
+body main .container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+body main .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+}
+body main .subTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main .subTitle img {
+  height: 2.5rem;
+  width: auto;
+}
+body main .subTitle h2 {
+  font-size: 2rem;
+  color: #1E3142;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+body main .subTitle a {
+  font-size: 1.5rem;
+  color: #3FA3A8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  padding-left: 0.3rem;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+body main .subTitle a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 3px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+body main .subTitle a:hover {
+  cursor: pointer;
+  color: #3FA3A8;
+}
+body main .subTitle a:hover::after {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  body main p, body main ul, body main ol, body main a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  body main h1 {
+    font-size: 2rem;
+  }
+  body main h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  body main h1 {
+    font-size: 1.75rem;
+  }
+  body main p, body main ul, body main ol, body main a {
+    font-size: 0.95rem;
+  }
+  body main h2 {
+    font-size: 1.2rem;
+  }
+}
+body main .boardSection,
+body main .pastBoards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2.5rem;
+}
+body main .boardHero {
+  width: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+body main .boardHero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .boardCategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+body main .boardCategory h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #1E3142;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-weight: 800;
+}
+body main .memberGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-content: space-evenly;
+}
+body main .memberCard {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body main .memberCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+body main .memberCard img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+body main .memberCard h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #3FA3A8;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+}
+body main .memberCard h4 img {
+  height: 2rem;
+  width: auto;
+}
+body main .memberCard p {
+  padding: 0 1rem 0rem 1rem;
+  margin: 0;
+}
+body main .duoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+body main .duoCard {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body main .duoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+body main .duoCard img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+body main .duoCard h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #3FA3A8;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+body main .duoCard p {
+  margin: 0;
+}
+body main .boardDropdown {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+body main .boardDropdown summary {
+  list-style: none;
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1E3142;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+body main .boardDropdown summary:hover {
+  background: rgba(63, 163, 168, 0.08);
+  color: #3FA3A8;
+}
+body main .boardDropdown summary::-webkit-details-marker {
+  display: none;
+}
+body main .boardDropdown .dropdownContent {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  body main .fillerCard {
+    display: none;
+  }
+  body main .duoCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  body main .duoCard img {
+    width: 110px;
+    height: 110px;
+  }
+  body main .boardDropdown summary {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 480px) {
+  body main .fillerCard {
+    display: none;
+  }
+  body main .memberGrid {
+    grid-template-columns: 1fr;
+  }
+  body main .duoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+body main .driveCard {
+  width: min(800px, 100%);
+  background: white;
+  border-radius: 28px;
+  padding: 0.3rem 1.4rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.25s ease;
+}
+body main .driveCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(63, 163, 168, 0.03);
+}
+body main .driveCard:hover .driveText h2 {
+  color: #3FA3A8;
+}
+body main .driveCard:hover .driveText h2::after {
+  width: 100%;
+}
+body main .driveCard:hover .driveIcon {
+  background: rgba(63, 163, 168, 0.14);
+}
+body main .driveCard:hover .driveIcon i {
+  color: #3FA3A8;
+}
+body main {
+  /* ICON */
+}
+body main .driveIcon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  background: rgba(63, 163, 168, 0.08);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.25s ease;
+}
+body main .driveIcon i {
+  font-size: 2.3rem;
+  color: #1E3142;
+  transition: color 0.25s ease;
+}
+body main {
+  /* TEXT */
+}
+body main .driveText h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.1rem, 1.7vw, 1.7rem);
+  font-weight: 800;
+  color: #1E3142;
+  line-height: 1.2;
+  transition: color 0.25s ease;
+}
+body main .driveText h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 3px;
+  background: #F4D24A;
+  transition: width 0.25s ease;
+}
+body main .driveText p {
+  margin-top: 0.8rem;
+  font-family: "Raleway", sans-serif;
+  color: rgba(30, 49, 66, 0.75);
+  line-height: 1.7;
+}
+body main {
+  /* TABLET */
+}
+@media (max-width: 1024px) {
+  body main .driveCard {
+    padding: 1.4rem 1.6rem;
+  }
+}
+body main {
+  /* MOBILE */
+}
+@media (max-width: 768px) {
+  body main .driveCard {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  body main .driveText h2 {
+    margin: 0 auto;
+  }
+}
+body main {
+  /* SMALL MOBILE */
+}
+@media (max-width: 480px) {
+  body main .driveCard {
+    border-radius: 22px;
+  }
+  body main .driveIcon {
+    width: 75px;
+    height: 75px;
+  }
+  body main .driveIcon i {
+    font-size: 2rem;
+  }
+  body main .driveText h2 {
+    font-size: 1.2rem;
+  }
+  body main .driveText p {
+    font-size: 0.95rem;
+  }
+}/*# sourceMappingURL=photoalbum.css.map */

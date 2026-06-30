@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  overflow-x: hidden;
+}
+
+main {
+  width: min(950px, 92%);
+  margin: 3rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+main h1 {
+  font-size: 3rem;
+  color: #1E3142;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+}
+main p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(30, 49, 66, 0.85);
+  white-space: pre-line;
+}
+main .subTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .subTitle img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 0.3rem;
+}
+main .subTitle h2 {
+  font-size: 1.5rem;
+  min-width: 35vw;
+  color: #3FA3A8;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+main .teamSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .teamSection .teamCard {
+  flex: 1 1 320px;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(63, 163, 168, 0.15);
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(30, 49, 66, 0.08), 0 2px 12px rgba(63, 163, 168, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+main .teamSection .teamCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(30, 49, 66, 0.12), 0 4px 16px rgba(63, 163, 168, 0.1);
+}
+main .teamSection .teamCard img {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(63, 163, 168, 0.12);
+}
+main .teamSection .teamCard h3 {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #1E3142;
+  line-height: 1.2;
+}
+main .teamSection .teamCard .function {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #3FA3A8;
+  font-weight: 600;
+}
+main .teamSection .teamCard p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(30, 49, 66, 0.8);
+}
+main .teamSection .teamCard p a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s ease;
+}
+main .teamSection .teamCard p a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background-color: #F4D24A;
+  transition: width 0.25s ease;
+}
+main .teamSection .teamCard p a:hover {
+  cursor: pointer;
+  color: #3FA3A8;
+}
+main .teamSection .teamCard p a:hover::after {
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  main .teamSection .teamCard {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  main .teamSection {
+    gap: 1.5rem;
+  }
+  main .teamSection .teamCard {
+    flex: 1 1 100%;
+    padding: 1.8rem;
+    border-radius: 22px;
+  }
+  main .teamSection .teamCard img {
+    width: 120px;
+    height: 120px;
+  }
+  main .teamSection .teamCard h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  main .teamSection .teamCard {
+    padding: 1.5rem;
+  }
+  main .teamSection .teamCard img {
+    width: 100px;
+    height: 100px;
+  }
+}
+main a {
+  text-decoration: none;
+}
+main button {
+  border: none;
+  outline: none;
+  padding: 1rem 1.6rem;
+  border-radius: 18px;
+  background: #1E3142;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 25px rgba(30, 49, 66, 0.12);
+}
+main button:hover {
+  background: #3FA3A8;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(63, 163, 168, 0.22);
+}
+main ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.9rem;
+  padding: 1.8rem 2rem;
+  border-radius: 24px;
+  background: rgba(161, 204, 197, 0.12);
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(30, 49, 66, 0.88);
+  box-shadow: 0 10px 30px rgba(30, 49, 66, 0.06);
+}
+main ul li {
+  margin-left: 1.2rem;
+  color: #1E3142;
+}
+main ul li::marker {
+  color: #3FA3A8;
+}
+main ul li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+main ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 0;
+  height: 2px;
+  background: #F4D24A;
+  transition: width 0.25s ease;
+}
+main ul li a:hover {
+  color: #3FA3A8;
+}
+main ul li a:hover::after {
+  width: 100%;
+}
+main .media {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+  padding: 1.8rem;
+  border-radius: 26px;
+  background: white;
+  box-shadow: 0 12px 30px rgba(30, 49, 66, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+main .media:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(30, 49, 66, 0.12);
+}
+main .media .mediaIcon {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+  background: rgba(63, 163, 168, 0.1);
+  color: #3FA3A8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease;
+}
+main .media .mediaIcon i {
+  font-size: 2.4rem;
+}
+main .media .mediaIcon:hover {
+  background: rgba(244, 210, 74, 0.18);
+  color: #1E3142;
+  transform: scale(1.04);
+}
+main .media .mediaContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+main .media .mediaContent h2 {
+  font-size: 1.7rem;
+  color: #1E3142;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+}
+main .media .mediaContent p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(30, 49, 66, 0.82);
+  max-width: 750px;
+}
+main .media .mediaContent a {
+  position: relative;
+  display: inline-block;
+  color: #3FA3A8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+main .media .mediaContent a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 3px;
+  background: #F4D24A;
+  transition: width 0.25s ease;
+}
+main .media .mediaContent a:hover {
+  color: #1E3142;
+}
+main .media .mediaContent a:hover::after {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  main .media {
+    padding: 1.5rem;
+  }
+  main .media .mediaIcon {
+    width: 78px;
+    height: 78px;
+  }
+  main .media .mediaIcon i {
+    font-size: 2rem;
+  }
+  main .media .mediaContent h2 {
+    font-size: 1.45rem;
+  }
+  main .media .mediaContent p,
+  main .media .mediaContent a {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 600px) {
+  main .media {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.3rem;
+    border-radius: 22px;
+  }
+  main .media .mediaIcon {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+  }
+  main .media .mediaIcon i {
+    font-size: 1.8rem;
+  }
+  main .media .mediaContent h2 {
+    font-size: 1.25rem;
+  }
+  main .media .mediaContent p {
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+  main .media .mediaContent a {
+    font-size: 0.93rem;
+  }
+}
+@media (max-width: 400px) {
+  main .media .mediaContent h2 {
+    font-size: 1.1rem;
+  }
+  main .media .mediaContent p,
+  main .media .mediaContent a {
+    font-size: 0.88rem;
+  }
+}
+main {
+  /* DESKTOP LARGE */
+}
+@media (min-width: 1440px) {
+  main {
+    width: min(1050px, 85%);
+  }
+}
+main {
+  /* LAPTOP */
+}
+@media (max-width: 1024px) {
+  main h1 {
+    font-size: 2.7rem;
+  }
+  main p,
+  main ul {
+    font-size: 0.98rem;
+  }
+}
+main {
+  /* TABLET */
+}
+@media (max-width: 768px) {
+  main {
+    width: 94%;
+    gap: 1.8rem;
+  }
+  main h1 {
+    font-size: 2.3rem;
+  }
+  main button {
+    width: 100%;
+    text-align: center;
+  }
+  main ul {
+    padding: 1.5rem;
+  }
+}
+main {
+  /* MOBILE */
+}
+@media (max-width: 600px) {
+  main {
+    margin: 2rem auto 1rem auto;
+    gap: 1.5rem;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  main p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  main button {
+    font-size: 0.95rem;
+    padding: 0.95rem 1.2rem;
+    border-radius: 16px;
+  }
+  main ul {
+    padding: 1.2rem 1.1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+  }
+  main ul li {
+    margin-left: 1rem;
+  }
+}
+main {
+  /* SMALL MOBILE */
+}
+@media (max-width: 400px) {
+  main h1 {
+    font-size: 1.7rem;
+  }
+  main button {
+    font-size: 0.9rem;
+  }
+  main ul {
+    font-size: 0.9rem;
+  }
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=socials.css.map */

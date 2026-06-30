@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title data-translate="htmltitlebemsahistory">BeMSA Ghent | History</title>
+    <link rel="stylesheet" href="./history.css">
+    <link rel="stylesheet" href="../BaseStyles/header.css">
+    <link rel="stylesheet" href="../BaseStyles/footer.css">
+    <link rel="shortcut icon" href="../../Download CI/BeMSA Icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="burgerContainer">
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <a href="../index.html" data-translate="bemsagent">BeMSA Ghent</a>
+    </div>
+    <div id="backdrop" class="backdrop" onclick="closeMenu()"></div>
+    <div id="mobileMenu" class="overlay">
+    <div class="close-btn" onclick="closeMenu()">✕</div>
+    <ul class="menu">
+        <li><a href="../index.html" onclick="closeMenu()"><img src="../../Download CI/Logo/BeMSALogoNB.png" alt=""></a></li>
+
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span data-translate="aboutus" class="mobilemenutitle">About Us</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="bemsagent" href="../AboutUs/bemsagent.html" onclick="closeMenu()">BeMSA Ghent</a></li> 
+            <li><a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard" onclick="closeMenu()">Current Board</a></li>
+            <li><a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards" onclick="closeMenu()">Past Boards</a></li>
+            <li><a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke" onclick="closeMenu()">Project Coordinators</a></li>
+            <li><a href="../AboutUs/missionandvision.html" data-translate="missandvis" onclick="closeMenu()">Mission & Vision</a></li>
+            <li><a data-translate="timeline" href="../AboutUs/timeline.html" onclick="closeMenu()">Timeline</a></li>
+            <li><a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">BeMSA | National</a></li>
+            <li><a href="../AboutUs/partners.html" data-translate="ourpartners" onclick="closeMenu()">Our Partners</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a href="#" onclick="toggleSubmenu(event)" >
+            <span class="mobilemenutitle" data-translate="calendar">Calendar</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a data-translate="upcomingevents" href="../Calendar/upcomingevents.html" onclick="closeMenu()">Upcoming Events</a></li>
+            <li><a data-translate="bemsacalendar" href="../Calendar/calendar.html" onclick="closeMenu()">BeMSA Calendar</a></li>
+        </ul>
+        </li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            Standing Committees <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../StandingCommittees/score.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="">SCORE <br> <span class="subTitle">Standing Committee on Research Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scope.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="">SCOPE <br> <span class="subTitle">Standing Committee on Professional Exchange</span></a></li>
+            <li><a href="../StandingCommittees/scora.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="">SCORA <br> <span class="subTitle">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span></a></li>
+            <li><a href="../StandingCommittees/scogs.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="">SCOGS <br> <span class="subTitle">Standing Committee on Global Surgery</span></a></li>
+            <li><a href="../StandingCommittees/scorp.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="">SCORP <br> <span class="subTitle">Standing Committee on Human Rights & Peace</span></a></li>
+            <li><a href="../StandingCommittees/scoph.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="">SCOPH <br> <span class="subTitle">Standing Committee on Public Health</span></a></li>
+            <li><a href="../StandingCommittees/scome.html" onclick="closeMenu()"><img class="subMenuSCLogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="">SCOME <br> <span class="subTitle">Standing Committee on Medical Education</span></a></li>
+        </ul>
+        </li>
+        <li><a href="../TAT-platform/tathome.html" onclick="closeMenu()">TAT-platform</a></li>
+        <li><a data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html" onclick="closeMenu()">Photo Album</a></li>
+        <li>
+        <a onclick="toggleSubmenu(event)">
+            <span id="mobilemenutitle" data-translate="contact">Contact</span> <span class="arrow">▶</span>
+        </a>
+        <ul class="submenumobile">
+            <li><a href="../Contact/contactform.html" onclick="closeMenu()">E-mail</a></li>
+            <li><a href="../Socials/socials.html" onclick="closeMenu()" data-translate="socials">Socials</a></li>
+            <li><a data-translate="location" href="./Location/location.html" onclick="closeMenu()">Location</a></li>
+        </ul>
+        </li>
+        <li>
+            <a onclick="toggleSubmenu(event)"><span class="mobilemenutitle" data-translate="language">Language</span>
+                <img class="languageFlag current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English"><span class="arrow">▶</span>
+            </a>
+            <ul class="submenumobile">
+                <li>
+                    <a onclick="setLanguageAlt('en')">
+                        English
+                        <img class="languageFlag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('fr')">
+                        Français
+                        <img class="languageFlag" src="../../Download CI/Languageflags/french.png" alt="Français">
+                    </a>
+                </li>
+                <li>
+                    <a onclick="setLanguageAlt('nl')">
+                        Nederlands
+                        <img class="languageFlag" src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <header>
+        <div class="topBar">
+            <a href="../AboutUs/sponsorus.html" data-translate="howtosponsorus">How to sponsor us?</a>
+            <a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a>
+            <a href="../GOG/gog.html" data-translate="transgressivebehaviour">Transgressive behaviour</a>
+        </div>
+        <div class="bottomBar">
+            <div class="leftMenu">
+                <a href="../index.html" class="headerLogoLink">
+                    <img src="../../Download CI/Logo/logo/logo_local_committees/rgb/gent/gent_rgb.png" alt="BeMSA Gent Logo">
+                </a>
+            </div>
+            <div class="rightMenu">
+                <div class="dropdown dropdown-parent">
+                    <a data-translate="aboutus" class="rightmenubutton">About Us</a>
+                    <div class="submenu">
+                        <a data-translate="bemsagent" href="../AboutUs/bemsagent.html">BeMSA Ghent</a>
+                        <div class="dropdown side-dropdown">
+                            <a data-translate="ourteam" href="../AboutUs/ourteam.html">Our Team</a>
+                            <div class="side-submenu">
+                                <a href="../AboutUs/ourteam.html#currentboard" data-translate="currentboard">Current Board</a>
+                                <a href="../AboutUs/ourteam.html#pastboards" data-translate="pastboards">Past Boards</a>
+                                <a href="../AboutUs/projectverantwoordelijken.html" data-translate="projectverantwoordelijke">Project Coordinators</a>
+                            </div>
+                        </div>
+                        <a data-translate="missandvis" href="../AboutUs/missionandvision.html">Mission & Vision</a>
+                        <a data-translate="timeline" href="../AboutUs/timeline.html">Timeline</a>
+                        <a data-translate="bemsanational" href="https://bemsa.be" target="_blank" rel="noopener noreferrer">BeMSA | National</a>
+                        <a data-translate="ourpartners" href="../AboutUs/partners.html">Our Partners</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="calendar">Calendar</a>
+                    <div class="submenu">
+                        <a href="../Calendar/upcomingevents.html" data-translate="upcomingevents">Upcoming Events</a>
+                        <a href="../Calendar/calendar.html" data-translate="bemsacalendar">BeMSA calendar</a>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton">Standing Committees</a>
+                    <div class="scmenu">
+                        <a href="../StandingCommittees/score.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORENT.webp" alt="SCORE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORE</span>
+                                <span class="sc-long">Standing Committee on Research Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scope.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPENT.webp" alt="SCOPE-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPE</span>
+                                <span class="sc-long">Standing Committee on Professional Exchange</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scora.html" >
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCORANT.webp" alt="SCORA-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORA</span>
+                                <span class="sc-long">Standing Committee on Sexual and Reproductive Health and Rights incl. HIV & AIDS</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scogs.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOGSNT.png" alt="SCOGS-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOGS</span>
+                                <span class="sc-long">Standing Committee on Global Surgery</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scoph.html">
+                            <img class="sclogo" src="../../Download CI/Logo/Standing Committees Ghent/SCOPHNT.webp" alt="SCOPH-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOPH</span>
+                                <span class="sc-long">Standing Committee on Public Health</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scorp.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCORPNT.webp" alt="SCORP-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCORP</span>
+                                <span class="sc-long">Standing Committee on Human Rights and Peace</span>
+                            </div>
+                        </a>
+                        <a href="../StandingCommittees/scome.html">
+                            <img class="sclogo" src="../../../../Download CI/Logo/Standing Committees Ghent/SCOMENT.webp" alt="SCOME-logo">
+                            <div class="sc-text">
+                                <span class="sc-short">SCOME</span>
+                                <span class="sc-long">Standing Committee on Medical Education</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="rightmenubutton" href="../TAT-platform/tathome.html">TAT-platform</a>
+                <a class="rightmenubutton" data-translate="photoalbum" href="../PhotoAlbum/photoalbum.html">Photo Album</a>
+                <div class="dropdown dropdown-parent">
+                    <a class="rightmenubutton" data-translate="contact">Contact</a>
+                    <div class="submenu">
+                        <a href="../Contact/contactform.html">E-mail</a>
+                        <a href="../Socials/socials.html" data-translate="socials">Socials</a>
+                        <a data-translate="location" href="../Location/location.html">Location</a>
+                    </div>
+                </div>
+                <div class="dropdown lang-dropdown dropdown-parent">
+                    <a class="rightmenubutton" href="#">
+                        <img class="lang-icon current-language-flag" src="../../Download CI/Languageflags/English.webp" alt="English">
+                    </a>
+
+                    <div class="submenu lang-menu">
+                        <a onclick="setLanguageAlt('en')">
+                            <img src="../../Download CI/Languageflags/English.webp" alt="English">
+                        </a>
+                        <a onclick="setLanguageAlt('fr')">
+                            <img src="../../Download CI/Languageflags/french.png" alt="Français">
+                        </a>
+                        <a onclick="setLanguageAlt('nl')">
+                            <img src="../../Download CI/Languageflags/OIP.webp" alt="Nederlands">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="historyPage">
+        <section class="historyHero">
+
+            <div class="historyTitle">
+                <h1>Detailed History of BeMSA Ghent</h1>
+            </div>
+
+            <p>
+                Explore BeMSA Ghent throughout the years.
+            </p>
+
+        </section>
+            <span class="buttonBlock">
+                <a href="../History/bemsagenthistory.html"><button>BeMSA Ghent</button></a>
+                <a href="../History/scophhistory.html" id="scoph"><button>SCOPH</button></a>
+                <a href="../History/scorahistory.html" id="scora"><button>SCORA</button></a>
+                <a href="../History/scorphistory.html" id="scorp"><button>SCORP</button></a>
+                <a href="../History/scomehistory.html" id="scome"><button>SCOME</button></a>
+                <a href="../History/scogshistory.html" id="scogs"><button>SCOGS</button></a>
+            </span>
+            
+        <div class="historyPage">
+            <!--Intro-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>About the reconstruction</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>
+                            The following page presents a reconstruction, compiled in 2026, of the history of BeMSA Ghent, tracing its roots back to the late SWISS era and its evolution into BeMSA Ghent. This overview has been created using archived files, old documents, reports, websites, and other preserved materials. As with any historical reconstruction, some events, projects, dates, or details may be incomplete or missing. If you notice inaccuracies, possess additional information, photos, or archival material, or would like to contribute to completing the story of BeMSA Ghent, feel free to send them through <a href="../Contact/contactform.html" class="activeLink">this contactform</a>. Every contribution helps preserve our shared history. For more detailed information, you can also consult our annual reports. You can download these via the icon in the section of the respective year.
+                        </p>
+
+                    </div>
+
+                    
+                    <div class="mediaSection">
+                        <img src="../../Files/BoardPictures/Current/board.JPG" style="width: 100%;" alt="">
+                        <span class="mediaCaption">The BeMSA Ghent Board thanks you for your interest in our history.</span>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2009-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2009</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>
+                            In a time when BeMSA wasn't yet a thing in Ghent nor Belgium, the SWISS (...) was very active organising several projects inline with the current BeMSA Ghent projects.
+                        </p>
+
+                        <p>
+                            Important milestones and early projects:
+                        </p>
+
+                        <ul>
+                            <li>Lecture by Tariq Ramadan: Islam and Human Rights. On invitation of Eva Brems from Ghent University, specialising in Human Rights and Non-Western Law, Tariq Ramadan, one of the most prominent and controversial voices on Islam, came to Ghent to give a lecture on Islam and Human Rights. During the lecture, he explored the relationship between Islamic thought and human rights principles.</li>
+                            <li>Infosession exchanges. Although not SCORE or SCOPE through IFMSA, the SWISS already organised its own exchanges abroad for medicine students.</li>
+                            <li>Palestine-evening. Testimonial, film, workshop dancing and couscous and mint tea at fair prices.</li>
+                            <li>Music for Life.</li>
+                            <li>Congress: Asylum and health. The session brings together several speakers with expertise in healthcare, migration, and asylum. Rita Vanobberghen, general practitioner at <a href="" class="activeLink">Geneeskunde voor het Volk</a>, shares her extensive experience working with asylum seekers and her involvement in supporting hunger strikes. Hadiel Holail from the <a href="" class="activeLink">Progress Lawyers Network</a> discusses the legal aspects of asylum. Stefanie De Maesschalck from Ghent University, Department of Family Medicine and Primary Health Care, presents her doctoral research on communication with migrants in primary care. Nina Henkens, staff member of the <a href="" class="activeLink">Movement for Children Without Papers</a>, offers insight into the situation of undocumented children. The workshop is led by Joris De Beer, who previously worked as a refugee camp coordinator for <a href="" class="activeLink">Médecins Sans Frontières</a>.
+                            </li>
+                        </ul>
+
+                        <p>
+                            On the national level, a major change took place. Students from SWISS (Ghent), Leuven, and Antwerp joined forces to establish BeMSA, the Belgian Medical Students’ Association, which became a candidate member of the International Federation of Medical Students’ Associations (<a href="" class="activeLink">IFMSA</a>), BeMSA’s parent organisation. IFMSA, founded in Copenhagen shortly after the Second World War, was created to foster international cooperation, peace, and collaboration among medical students worldwide. Through this connection, Belgian medical students would later gain access to a global network of exchanges, projects, trainings, and opportunities in global health.
+                        </p>
+                    </div>
+                    <div class="mediaSection">
+                        <img src="../../Files/History/BeMSAGhent/SWISS_LOGO.png" style="width: 40%;" alt="">
+                        <span class="mediaCaption">Logo of BeMSA Ghent's predecessor, SWISS</span>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2010-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2010</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year for SWISS with several projects with high attendance, such as:</p>
+
+                        <ul>
+                            <li>Heart for Life I, a project that would grow into one of BeMSA Ghent’s most popular initiatives, started in 2010. It went on to be organised annually until its final edition in 2025. The project was eventually discontinued due to government regulations, as it was classified as a screening programme, bringing its further development and continuation to an end.</li>
+                            <li>Village party. Sadly, not much is yet known about this project.</li>
+                            <li>Turquaze film in the cinema. Sadly, not much is yet known about this project.</li>
+                            <li>Visiting a mosque. Sadly, not much is yet known about this project.</li>
+                            <li>Global Health Short Course.</li>
+                            <li>Summerschool Health & Migration?</li>
+                        </ul>
+                    </div>
+
+                    <div class="mediaSection">
+                        <img src="../../Files/History/BeMSAGhent/Global Health Short Course.jpeg" style="width: 100%;" alt="">
+                        <span class="mediaCaption"><span>Global Health Short Course | </span> <a class="activeLink" href="" target="_blank" rel="noopener noreferrer">Archive</a></span>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2011-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2011</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>A major milestone for SWISS: the organisation decided to change its name to BeMSA Ghent, officially becoming a local committee of BeMSA National.</p>
+
+                        <ul>
+                            <li>SCOPE is founded in BeMSA Ghent, students had the opportunity to go to an infosession to candidate for a professional exchange abroad.</li>
+                            <li>The first edition of Teddy Bear Hospital is launched, a project aimed at helping children overcome their fear of the “white coats.” The initiative proved to be a great success, growing into a long-standing project that has been organised for more than 15 years.</li>
+                            <li>
+                                The World AIDS Day poster campaign is organised to raise awareness about HIV & AIDS and encourage discussion around prevention, solidarity, and global health.
+                            </li>
+
+                            <li>
+                                A collaboration between Artsen Zonder Grenzen and Reproductive Health brings a testimony by a midwife, offering students insight into reproductive healthcare and humanitarian medical work in challenging contexts.
+                            </li>
+
+                            <li>
+                                Heart for Life is organised once again, continuing its mission of raising awareness around cardiovascular health and prevention within the wider community.
+                            </li>
+
+                            <li>
+                                UAEM – Universities Allied for Essential Medicines hosts an evening discussion with a UAEM member from Germany, exploring global access to medicines and the role of students in healthcare advocacy.
+                            </li>
+
+                            <li>
+                                The Organ Donation Working Group organises an activity focused on organ donation, aiming to inform students and stimulate reflection on donation and transplantation.
+                            </li>
+
+                            <li>
+                                The first edition of Healthy Nutrition Lessons in Nieuw Gent takes place, promoting healthy eating habits and lifestyle awareness among young people.
+                            </li>
+
+                            <li>
+                                The first edition of First Aid for Parents is launched, equipping parents with practical first-aid knowledge and skills for everyday emergencies.
+                            </li>
+
+                            <li>
+                                Dr. Luther Castillo from Honduras gives a lecture on free healthcare, sharing his experiences and perspectives on healthcare accessibility and social medicine.
+                            </li>
+
+                            <li>
+                                The Summer School on Health & Migration brings together participants to explore the intersection of healthcare, migration, and social determinants of health.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+                        <video controls src="../../Files/Timeline/SWISS wordt BeMSA Gent.mp4" style="width: 100%;"></video>
+                        <span class="mediaCaption">SWISS becomes BeMSA Ghent</span>
+                        <img src="../../Files/History/BeMSAGhent/TBH2011.JPG" style="width: 100%;" alt="">
+                        <span class="mediaCaption"><span>1st Edition of Teddy Bear Hospital volunteer team | </span><a href="Archive" target="_blank" class="activeLink">Archive</a></span>
+                        <audio controls>
+                            <source src="../../Files/History/BeMSAGhent/PERSTBH2011.MP3" type="audio/mpeg">
+                        </audio>
+                        <span class="mediaCaption">
+                            UrgentFM radio broadcast about the 1st edition of Teddy Bear Hospital
+                        </span>
+                        <img src="../../Files/History/BeMSAGhent/WAD2011.jpeg" style="width: 100%;" alt="">
+                        <span class="mediaCaption"><span>World Aids Day 1st December | </span><a href="Archive" target="_blank" class="activeLink">Archive</a></span>
+                        <video controls style="width: 100%;" src="../../Files/History/SCOPH/H4l2012.mp4"></video>
+                        <span class="mediaCaption">Cardio for Life</span>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2012-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2012</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>
+                                An information evening on international clinical internships is organised, providing students with guidance on opportunities abroad and application procedures.
+                            </li>
+
+                            <li>
+                                An SG World AIDS Day talk is held featuring Mark Heywood. He is the director of Section 27, a South African human rights organisation named after the section of the South African Constitution that guarantees the right to access healthcare. He is also a co-founder of the Treatment Action Campaign (TAC), which works alongside Médecins Sans Frontières to ensure access to HIV/AIDS prevention and treatment for all.
+                            </li>
+
+                            <li>
+                                The second edition of the local project on healthy nutrition takes place, continuing efforts to raise awareness about healthy eating habits.
+                            </li>
+
+                            <li>
+                                The second edition of First Aid for primary school children and parents is organised, aiming to provide basic emergency skills in an accessible way.
+                            </li>
+
+                            <li>
+                                The second edition of Teddy Bear Hospital (TBH II) is organised, further expanding the project aimed at reducing children’s fear of healthcare settings.
+                            </li>
+
+                            <li>
+                                An international cooking evening is organised, bringing students together to exchange cultures through food and social interaction.
+                            </li>
+
+                            <li>
+                                The SCOPE programme is officially launched, marking the start of BeMSA Ghent’s international clinical exchange opportunities.
+                            </li>
+
+                            <li>
+                                The Summer School on Health & Migration is organised, focusing on the intersection of healthcare, migration, and social determinants of health.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img style="width: 100%;" src="../../Files/History/BeMSAGhent/Gezonde Voeding.jpeg" alt="">
+                        <span class="mediaCaption">
+                            <span>Local project about healthy nutrition | </span><a href="" target="_blank" class="activeLink">Archive</a>
+                        </span>
+                        <img style="width: 100%;" src="../../Files/History/BeMSAGhent/WEEKEND2013.jpg" alt="">
+                        <span class="mediaCaption">
+                            <span>'12-'13 BeMSA Ghent board at their teambuilding weekend | </span><a href="" target="_blank" class="activeLink">Archive</a>
+                        </span>
+                        <audio controls>
+                            <source src="../../Files/History/BeMSAGhent/PERSTBH2012.mp3" type="audio/mpeg">
+                        </audio>
+                        <span class="mediaCaption">Radio 2 broadcast on Teddy Bear Hospital 2012</span>
+                        <video controls src="../../Files/History/BeMSAGhent/Bemsagentpromofilm2012.mp4" style="width: 100%;"></video>
+                        <span class="mediaCaption">BeMSA Ghent promofilm 2012</span>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2013-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2013</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>
+                                Workshop Sexual Grey Zones - 29 October. An interactive workshop exploring consent, personal boundaries and “sexual grey zones”, encouraging students to reflect on sexuality, communication and respect.
+                            </li>
+
+                            <li>
+                                Deaf Culture Lecture - An evening dedicated to understanding the world of deaf and hard-of-hearing individuals. The lecture, given in Flemish Sign Language with interpretation, introduced participants to deaf culture and communication in healthcare settings.
+                            </li>
+
+                            <li>
+                                Understanding Motor Disabilities - A project aimed at helping future physicians better understand and communicate with people living with motor disabilities.
+                            </li>
+
+                            <li>
+                                First Aid Basics for Children and Parents - 21 February, Victor Carpentier Primary School. BeMSA Gent taught children from the 5th and 6th grade and their parents how to respond to common household accidents, with room for questions and practical discussion.
+                            </li>
+
+                            <li>
+                                Teddy Bear Hospital - 25 February–1 March, UZ Gent. Children from kindergarten and primary school visited a mock hospital where their teddy bears were examined and treated by medical students. The project aimed to reduce fear of healthcare environments while helping future doctors gain experience communicating with children.
+                            </li>
+
+                            <li>
+                                Heart for Life - 29 September, Grootkanonplein Ghent. A cardiovascular health awareness campaign in honour of World Heart Day, where volunteers assessed cardiovascular risk through questionnaires and blood pressure measurements.
+                            </li>
+
+                            <li>
+                                Healthy Nutrition Project - A continuation of the healthy lifestyle project, where children learned about healthy nutrition, exercise and hygiene through interactive activities and games.
+                            </li>
+
+                            <li>
+                                SCOPE Gent Launch - The local SCOPE project was officially developed in Ghent, involving preparations with the faculty, UZ Gent and internationalisation services to organise incoming clinical exchanges.
+                            </li>
+
+                            <li>
+                                Summer School Health & Migration III - July. The third edition of the international summer school brought together medical students from around the world to explore migration, human rights, communication and global health through lectures, field visits and intercultural exchange.
+                            </li>
+
+                            <li>
+                                BeMSA Gent Planning Weekend - 4–6 October, Domein De Kruier (Balen). A weekend focused on teambuilding, brainstorming and strategic planning, during which BeMSA Gent redesigned its organisational structure and future vision.
+                            </li>
+
+                            <li>
+                                Info Evening Abroad - 24 October, UZ Gent Auditorium D. An information evening for students interested in international experiences, presenting opportunities such as exchanges, internships and international congresses.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img style="width: 100%;" src="../../Files/History/BeMSAGhent/SSHM2013.jpg" alt="">
+                        <span class="mediaCaption">
+                            <span>Students at summer school migration & health | </span><a href="" target="_blank" class="activeLink">Archive</a>
+                        </span>
+                        <video controls style="width: 100%;" src="../../Files/History/SCOPH/TBH2013.mp4"></video>
+                        <span class="mediaCaption">
+                            <span>Promotional video for Teddy Bear Hospital 2013 | </span><a href="" class="activeLink">Archive</a>
+                        </span>
+                    </div>
+
+                </div>
+                <span class="buttonBlock">
+                    <a href="../../Files/Documents/JAARVERSLAG2013.pdf" download=""><button>Download year report <i class="fa-solid fa-download"></i></button></i></a>
+                </span>
+            </section>
+            <!--2014-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2014</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>BeMSA Gent Planningsweekend - 26–28 september - Weekend in Ermetton-sur-Biert met teambuilding en het uitwerken van de plannen voor het nieuwe werkjaar.</li>
+
+                            <li>Filmavond “Mensrechten Vandaag” - 21 oktober - Vertoning van The Butler, gekozen via studentenpoll, om mensenrechten als actueel thema te belichten.</li>
+
+                            <li>Infoavond Buitenland - 23 oktober -   Jaarlijkse infoavond over buitenlandse stages, uitwisselingen, beurzen en extracurriculaire mogelijkheden.</li>
+
+                            <li>SOS Vormingsdag - 31 oktober - 
+                            Training door Sensoa voor studenten die seksuele voorlichting geven in middelbare scholen.</li>
+
+                            <li>SOS – Seksuele Educatie Op School - 3–6 november & 18 december  -
+                            Interactieve sessies van 4 uur in scholen over seksualiteit, relaties, anticonceptie en SOA‑preventie.</li>
+
+                            <li>Gezonde Voeding (deel 1 & 2) - 19 november & 2 december -
+                            Project in lagere scholen met uitleg over gezonde voeding, kookworkshops en een beweegparcours.</li>
+
+                            <li>Heart For Life - 29 november - 
+                            Sensibiliseringsactie waarbij studenten het cardiovasculair risico van voorbijgangers bepalen op drie locaties.</li>
+
+                            <li>Dag van de Mensenrechten - 10 december - 
+                            Filmpje en posters in auditoria om studenten bewust te maken van de 30 mensenrechten en hun actuele relevantie.</li>
+
+                            <li>Teddy Bear Hospital - 9–13 maart -
+                            Kinderen laten hun knuffels “onderzoeken” in het Skillslab om angst voor dokters te verminderen.</li>
+
+                            <li>Clubavond: Safe Sex - datum t.b.d.  
+                            Thema-avond met spelletjes, cocktails en gratis condooms, in samenwerking met Wingman.</li>
+
+                            <li>Speeddate Your Doctor - begin april - 
+                            Speeddating tussen studenten en artsen uit diverse specialismen om studiekeuze en carrièrevragen te bespreken.</li>
+
+                            <li>Sport met Mensen met een Beperking - 29 maart - Sportdag voor studenten en personen met een beperking, gericht op inclusie en communicatietraining.</li>
+
+                            <li>Studium Generale: Roma in Gent - 22 april - Panelgesprek “Roma in Gent: Mogen we ier nog efkes blijven?” met sprekers uit de Roma‑gemeenschap en integratiedienst.</li>
+
+                            <li>SCOPE – Zomeruitwisseling - juli–augustus  - Internationale klinische stages van 4 weken; Gent ontvangt 10 studenten en stuurt 10 studenten uit.</li>
+
+                            <li>SCORE – Onderzoeksuitwisseling - zomerperiode - Eerste Belgische editie: Gent ontvangt 2 studenten en stuurt 3 uit voor onderzoeksstages van 4 weken.</li>
+
+                            <li>Summer School “Health & Migration” - juli - Internationale 10‑daagse summer school rond gezondheid en migratie, met lezingen en bezoeken.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+                        <img style="width: 100%;" src="../../Files/History/BeMSAGhent/HFL2014.jpg" alt="">
+                        <span class="mediaCaption">
+                            <span>Heart 4 Life | </span><a href="" class="activeLink">Archive</a>
+                        </span>
+                        <video controls src="../../Files/History/BeMSAGhent/Bemsagentpromofilm2014.mp4" style="width: 100%;"></video>
+                        <span class="mediaCaption">BeMSA Ghent promofilm 2014</span>
+
+                    </div>
+
+                </div>
+                <span class="buttonBlock">
+                    <a href="../../Files/Documents/JAARVERSLAG2014.pdf" download=""><button>Download year report <i class="fa-solid fa-download"></i></button></i></a>
+                </span>
+            </section>
+            <!--2015-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2015</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p></p>
+
+                        <ul>
+                            <li>25–27 september – Bestuursweekend in Sporthome Eeklo met brainstorm, planning en teambuilding.</li>
+
+                            <li>30 oktober – Infoavond BeMSA Gent voor alle studenten over werking, projecten en werkgroepen.</li>
+
+                            <li>30 maart – Clubavond “Sexual Healing” met seks-gerelateerde games en prijzen om taboes te doorbreken.</li>
+
+                            <li>9 november – Clubavond “Party around the world” met verkleedactie, multiculturele drankspelletjes en opbrengst voor goed doel.</li>
+
+                            <li>22 april – Studium Generale “Roma in Gent: Mogen we ier nog efkes blijven?” met panel van experts en getuigenissen.</li>
+
+                            <li>25 november – Lezing “De arts als patiënt en arts; humor op zware momenten” door dr. Hugo Stuer in UZ Gent.</li>
+
+                            <li>23–24 oktober – SOS-trainingsweekend met lezingen, vorming en teambuilding voor nieuwe vormingswerkers.</li>
+
+                            <li>21 april – SOS-schoolbezoek in Lokeren met interactieve sessies rond seksualiteit en relaties.</li>
+
+                            <li>28 april – SOS-schoolbezoek in Gijzegem met peer‑educatie over seksualiteit en SOA‑preventie.</li>
+
+                            <li>27 oktober – SOS-schoolbezoek in Gijzegem met interactieve sessies voor secundaire leerlingen.</li>
+
+                            <li>9, 10 en 18 november – SOS-sessies in Voskenslaan met anonieme vragenbokaal en educatieve werkvormen.</li>
+
+                            <li>16–24 november – SOS-sessies in Mariakerke met focus op betrouwbare informatie en mythes doorbreken.</li>
+
+                            <li>24 november – The Stigma Talk rond HIV en stigma met lezingen en getuigenissen van experten.</li>
+
+                            <li>1 december – The Stigma Challenge op tram 1 en Gent-Sint-Pieters om HIV bespreekbaar te maken met live optredens.</li>
+
+                            <li>Datum t.b.d. – Workshop seksueel geweld met dr. Ines Keygnaert over signalen, aanpak en rollenspellen.</li>
+
+                            <li>Datum t.b.d. – Daphné Project rond omstaandertraining seksueel geweld met 6u opleiding en interviews.</li>
+
+                            <li>24 april – Gezonde Voeding-sessie in Victor Carpentierschool voor 5e en 6e leerjaar met koken en sportactiviteiten.</li>
+
+                            <li>21 oktober – Gezonde Voeding-sessie voor 2e leerjaar met spel, kookworkshop en beweegparcours.</li>
+
+                            <li>21 november – Heart For Life in Gent Zuid en Korenmarkt met 460 gescreende voorbijgangers en infosessie vooraf.</li>
+
+                            <li>10 december – Dag van de Mensenrechten met posterproject gebaseerd op brieven van geïnterneerden.</li>
+
+                            <li>9–13 maart – Teddy Bear Hospital in Skillslab UZ Gent met 232 kinderen en 78 studenten voor angstreductie en communicatie‑oefening.</li>
+
+                            <li>31 maart – Date Your Doctor met 51 artsen en >100 studenten voor speeddates over specialisaties.</li>
+
+                            <li>3 november – Date Your Doctor met 30 artsen en 70 studenten voor kleinschaligere, intiemere gesprekken.</li>
+
+                            <li>Datum t.b.d. – Sportdag met mensen met een beperking om communicatie‑ervaring en inclusie te bevorderen.</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+                <span class="buttonBlock">
+                    <a href="../../Files/Documents/JAARVERSLAG2015.pdf" download=""><button>Download year report <i class="fa-solid fa-download"></i></button></i></a>
+                </span>
+            </section>
+            <!--2016-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2014</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2017-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2014</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2018-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2014</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2019-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2014</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2020-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2020</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2021-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2020</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2022-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2020</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2023-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2020</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2024-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2020</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2025-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2020</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--2026-->
+            <section class="yearCard">
+
+                <div class="yearHeader">
+                    <h2>2020</h2>
+                </div>
+
+                <div class="yearContent">
+
+                    <div class="textSection">
+
+                        <p>Another year description.</p>
+
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="mediaSection">
+
+                        <img src="../../Files/example.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-column">
+            <h3 data-translate="bemsanpo">BeMSA npo</h3>
+            <ul>
+                <li><a data-translate="aboutus" href="../AboutUs/bemsagent.html">About Us</a></li>
+                <li><a data-translate="bemsagentonthenews" href="../News/news.html">BeMSA Gent on the News</a></li>
+                <li><a data-translate="bemsanational" href="https://www.bemsa.be/" target="_blank" rel="noopener noreferrer">BeMSA | National</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="legal">Legal</h3>
+            <ul>
+                <li><a href="../Privacy/privacypolicy.html" data-translate="privacypolicy">Privacy Policy</a></li>
+                <li><a data-translate="transgressivebehaviour" href="../GOG/gog.html">Transgressive behaviour</a></li>
+                <li><a href="https://docs.google.com/document/d/1BUPTQK4D-L76CK5wu9N83QkAfNaDvYoW/edit#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer" data-translate="bylaws">By-laws</a></li>
+                <li>BE 0536.703.374</li>
+            </ul>
+            </div>
+
+            <div class="footer-column">
+            <h3 data-translate="contact">Contact</h3>
+            <ul>
+                <li><a href="mailto:info@bemsa-gent.be" target="_blank" rel="noopener noreferrer">info@bemsa-gent.be</a></li>
+                <li><a href="../Location/location.html">C Heymanslaan 10 bus -1B3 | Ghent 9000</a></li>
+                <li><a data-translate="contactform" href="../Contact/contactform.html">Contact form</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-column footer-brand">
+                <a class="imageFooter" href="../index.html"><img src="../../Download CI/Logo/OIP.webp" alt=""></a>
+                <div class="footer-socials">
+                    <a href="https://www.bing.com/ck/a?!&&p=ae8a3bd15ff8306ad873a9a50e37d58b583d0399645bdac7ca6a4766f207c17aJmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=facebook+bemsa+gent&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0JlTVNBR2VudC8" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=04266983d4e99b1e79bc6fd928b0d999dd557d4c1bd708ec5386b0ab4da462f4JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=instagram+bemsa+gent&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9iZW1zYV9nZW50Lw" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@bemsa_gent" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=541c6d8ca824ffff9367b2669c3d1ec6f7df03de2a451ae509147a46ced6ad15JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=youtube+bemsa+gent&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQGJlbXNhZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=ea6c151f7bfae94d21f0a67ed4034ff3115b434b0ad48c4480d4074a4ffa0934JmltdHM9MTc3NzY4MDAwMA&ptn=3&ver=2&hsh=4&fclid=06b32d9d-2c9b-6641-193c-3ad02df96726&psq=BeMSA+Gent+Linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvYmVtc2EtZ2VudA" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" ></i></a>
+                </div>
+            <div class="footer-accent-bar"></div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><span id="year"></span> <span data-translate="bemsanpofooter">BeMSA npo</span></p>
+            <div class="footer-bottom-links">
+                <a href="../AboutUs/sponsorus.html" data-translate="sponsorbemsanpo">Sponsor BeMSA npo</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../TranslationFiles/language.js"></script>
+    <script src="../BaseStyles/header.js"></script>
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
